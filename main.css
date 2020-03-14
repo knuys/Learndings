@@ -1,0 +1,94 @@
+body {
+    background-color: whitesmoke;
+    font-size: large;
+    margin: 6rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6em;
+    justify-content: center;
+  }
+  
+  h1 {
+    color: rgb(8, 110, 110);
+    margin-left: 20rem;
+    margin-bottom: 5rem;
+    font-family: Arial, sans-serif;
+  }
+
+  h2 {
+     color: rgb(10, 134, 134); 
+     margin-left: 50px;
+     font-family: Arial, sans-serif;
+  }
+
+  h3 {
+      color: rgb(87, 122, 82);
+      margin-left: 100px;
+      font-family: Arial, sans-serif;
+  }
+
+  h4 {
+      color: darkseagreen;
+      margin-left: 100px;
+      font-family: Arial, sans-serif;
+  }
+
+  h5 {
+    justify-content: center;
+  }
+
+  .selector {
+      color: pink;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .new {
+      color: palevioletred;
+      background-image: url("https://images.unsplash.com/photo-1498252613819-c91e65dfc7bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80");
+      background-size: cover;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2rem;
+      
+  }
+
+  #anchoring {
+      font-size: 0.85rem;
+      float: right;
+  }
+
+  p {
+      padding: .6rem;
+  }
+
+  .nav li {
+      display: inline;
+      padding: 0 30px;
+  }
+
+  .food {
+      display: inline;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .food img {
+      padding: 0 2em 2em;
+  }
+
+  .button {
+      margin-left: 32.5rem;
+      
+  }
+
+  .button a {
+    cursor: pointer;
+    padding: 8px 18px;
+    border: 2px solid rgb(8, 110, 110);
+    position: relative;
+  
+  }
+  
+  .button a:active {
+    top: 2px;
+  
+  }

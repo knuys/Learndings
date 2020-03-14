@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learning With CodeAcademy</title>
+  <meta charset="utf-10"/>
+  <link 
+    rel="stylesheet"
+    type="text/css"
+    href="main.css">
+
+    <style>
+        h5 {
+            color: orange;
+         }
+            </style> 
+
+</head>
+
+<h1>CodeAcademy: Make A Website</h1>
+<body>
+   
+<div class= "Everything">
+
+   
+
+    <h2>Getting Started With HTML</h2>
+        <p>This module is all about the initial basic skills for HTML learned through CodeAcademy's "Make A Website"
+            lesson. So far I have made headings of varying sizes using 'h1' and 'h2', and am currently using 'p' to write
+            this paragraph.</p>
+
+    <h3>Links</h3>
+        <p>Now I am under an 'h3', pretty neat, huh? Still using 'p' for making this text. Now I am going to use 
+            'a href' with the necessary quotation marks to link to one of my 
+            <a href="https://www.youtube.com/watch?v=-TDyceWAhBI">favourite videos on youtube</a>. I remembered to use 
+            my greater-than symbol to include that text in my link, and I closed it with the /a which is why this text is
+            not part of the link!</p> 
+
+        <p>I have made a new paragraph using 'p' directly under my previous one and it has created a space, like a 
+        real paragraph should on Word Doc. I just ran this by saving the file as HTML and it is not pretty, but it 
+        is doing the things I want it to for now.</p>
+
+    <h3>Images</h3>
+        <p>Now I will insert an image of one of my favourite animals.</p>
+        <img width="600" src="https://images.unsplash.com/photo-1583812365991-05f45d8a765e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80"/>
+        
+        <p>Back with another 'p'. To do add this image I used 'img src' with the equals sign and the quotation marks
+        as I did with 'a href'. To close, this just needed a forward slash and a greater-than symbol. The image is
+        also huge, I will find my own way to address this as it is not covered in this lesson.</p>
+
+        <p>I have now learned how to change the size of my image by adding the 'width' attribute before 'src'.</p>
+
+    <h3>Videos</h3>
+        <p>Now I am inserting a video. This is different to when I inserted a video link. This will actually embed 
+        a player onto this page. Unfortunately, I had to diverge away from the method proposed by CodeAcademy as I 
+        could not find a way to get a link to the mp4 of a video online without getting distracted, so instead I 
+        hit the embed option for sharing on YouTube which, to be fair, most people are likely to do anyway when 
+        embedding videos. </p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xWYeoXGkYFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <p>It works well, YouTube also has the option to add components which will 'Enhance Privacy' for those on my
+        site, but since I will likely be the only person using this, my soul has already been sold to the YouTube
+        overlords.
+
+        The CodeAcademy 'Way of Doing Things TM' would be to use 'video' element with 'width' and 'height' attributes
+        at a 320:240 ratio, and the addition of the 'controls' attribute. This is followed by a 'source' element and
+        an 'src' attribute to insert the direct video link. You then specify the video type with the attribute 'type'
+        and hope for the best you've embedded yourself a video.
+        
+        However, I am sure you can do the same with audio.</p>
+        
+        <audio controls>
+            <source src="https://www.dropbox.com/s/qt2ais164za4ygb/K-391%20-%20Earth.mp3" type="audio/mp3">
+            </audio>
+            
+            <p>It works, but it will not play as the link is not a 'pure' file. Let me try with one below with an 'ogg'
+                from Wikipedia:</p>
+
+            <audio controls>
+                    <source src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Chopin_Prelude_Op_28_N_15_Giorgi_Latsabidze_performs.ogg" type="audio/ogg">
+                    </audio>
+
+    <h3>Lists</h3>
+        <p>Now we are doing lists. First, I am going to make an unordered list using the 'ul' tag like so:</p>
+        
+        <ul>
+            <li>Now I have used a 'li' tag to make a point</li>
+            <li>I closed that one and made another 'li' tag for a new point</li>
+        </ul>
+
+        <h4>Something Extra</h4>
+
+        <p>I want to try making a numbered list as if I were say, writing a recipe's method, or step-by-step on how
+        to even do this. </p>
+
+        <ol>
+            <li>First, stop thinking about making yourself an unordered list, a numbered list is technically an
+            ordered list, right?</li>
+            <li>So instead of using 'ul', use 'ol' making this an ordered list</li>
+            <li>All of the points continue to be created using and closing 'li' per point</li>
+            <li>Enjoy finding this neat</li>
+        </ol>
+
+        <p>CodeAcademy is now taking the time to discuss parent vs child elements, I have taken it to mean that child
+        elements should have parent elements, but parent elements don't need children unless you want them to look
+        useful...ouch. The example they gave was very well illustrated:
+        </p>
+        
+        <img src="https://s3.amazonaws.com/codecademy-content/courses/make-a-website/img/parent-child.svg" alt="Chart 
+        showing 'ul' as the parent element and 'il' as the child element" style="background-color: rgb(24, 24, 68)"/>
+        
+        <p>To this image I went and sought out a way to label my image such that low vision/blind people or those
+        with screenreaders would be included. As it is an SVG file, I could not crop the image, however I did get
+        some very good practice with using inline and internal styles. Not fun.</p>
+
+    <h3>What the Div?</h3>
+
+        <p>From what it says about the 'div' element, it sounds like 'div' basically allows me to divide up my page 
+        into neat containers that I can then treat independently away from the rest of the page. So let's check that
+        out. I am going to be making two 'div's, one for a nav bar that I will make here (hopefully it becomes 
+        clickable!) and another to contain pretty much everything I am doing here.</p>
+        
+   <h4>Div Practice Navigation</h4> 
+   <div class="nav">
+        <ol>
+            <li>Links</li>
+            <li>Images </li>
+            <li>Video</li>
+            <li>Lists</li>
+            <li>Div</li>
+        </ol>
+
+    </div>
+
+    <div class="selector">
+            <h3>CSS Class Selectors.</h3>
+            <p>I made this text pink by creating a 'div' in HTML and using the class selector in
+                my CSS file.</p>
+        </div>
+
+        <p>We have revisted the 'div' in the CSS module of this lesson. It specifies that
+            when we name our 'div's we are essentially creating a type of container for everything in that div. We
+            can then use that name, which is called a 'class selector' to apply CSS to this container by using
+            '.class selector name' in your CSS.</p>
+
+        
+        
+
+    <h3>Metadata</h3>
+
+        <p>This is the part of the lesson where CodeAcademy finally explains all the elements I have no clue about 
+    which I copy-pasted straight into my text editor. Here is a summary of them:</p>
+
+        <ul>
+            <li>'!DOCTYPE html' - This tells the browser to expect some poorly written HTML and which version. Without 
+            it, things may go whack as it may use older standards for rendering the site.</li>
+            <li>'html'- Daddy</li>
+            <li>'head' - This precedes the title, it encloses all of the metadata</li>
+            <li>'title' - What you call your site, and the name that appears on a search result for example</li>
+            <li> 'meta charset="utf-8"' - Tells the browser what character sets to use, the utf-8 is the character set
+            chosen. I'm sure when I mess around with it, it will be clearer to me.</li>
+
+        </ul>
+
+    <h3>Closing Comments</h3>
+
+        <p>Unfortunately, as I am not interested in forking money over to CodeAcademy, I won't be able to access the
+        Freeform Project or the Multiple Choice Quiz. But I think making this diary for my learning is a good way to
+        actually learn and have a project of my own.</p>
+
+        <p>What I would like to improve on would of course be styling. This thing is hideous! I am also upset that it
+        didn't expand on some of the concepts such as teaching me how to resize images. It's also a bit of a shame 
+        that I could not get the audio or video embeddings to work, or that it had not taught me how to make 
+        clickable links to bring users to a specific location on the page. Perhaps future lessons will expand on that.
+        </p>
+
+    </div>
+
+
+<h2>Styling with CSS</h2>
+
+    <p>I don't fully understand what differs between CSS and html, I'm imagining it as the difference between 'skin' 
+        vs 'central nervous system' - both are important, but without skin it's kinda gross.</p>
+        
+    <p>CodeAcademy has me starting off with familiarising myself with the 'link' element. This element allows CSS
+        styling to be used. It basically interacts with my html and jazzes up the place. It's also a self-closing tag 
+        just like the 'img' element. Link uses the following attributes:</p>
+
+    <ul>
+        <li>'rel' -  What the relationship between the current file and the file being linked to is</li>
+        <li>'type' - What type of file is being linked to</li>
+        <li>'href' - Where the link goes</li>
+    </ul>
+
+    <p>To do this right, we need to include all of those attributes in our 'link' element. For the purposes of
+    learning, I have followed the CodeAcademy method and made 'rel' be 'stylesheet', 'type' be 'text/css', and 
+    'href' be 'main.css' as was in the example. This is External CSS and requires that I have a 'main.css' file
+    for it to take my styling from. I will do that now.</p>
+
+    <p>After messing around a bit making my CSS file, which honestly wasn't that tricky, I realised my colour
+        theory palate cannot be satisfied just yet until I learn more styling techniques which would allow me to
+        pick colours that really pop in certain areas. For now, all I've done was play with font size, background
+        colour and margins for my headings. I'm restricting myself to play around just withwhat I am being taught
+        ...mostly. I did use W3 Schools to help me out with the CSS file because it was paining me that it wasn't 
+        yet included in the lesson.</p>
+    
+    <p>I can also add an Internal Stylesheet if I wanted to using the 'style' element and CSS rules as I did with
+        h5. </p>
+        <h5>I changed the font colour. The only difference between doing this and an external CSS is that this 
+            required the 'style' element and no link element!</h5>
+       <p> We can also add inline styles and create something funky with style becoming an attribute.</p>
+    
+        <p style=
+        "color: blue; 
+        font-size: 20px; 
+        font-style: italic;
+        margin-bottom: 30px;
+        ">Similar to the previous example, however this is applied only to this text. I also need to remember to 
+        add my greater-than before my string! Here I changed the font size, style and colour. As you can see, it has
+        taken the margin style from the external CSS. I also used this inline styling to add a background color
+        to a transparent image above.</p>
+
+    <h3>Rule Anatomy</h3>
+        <p>It's that part of the lesson which is all about reading. Here is some fresh CSS vocab:</p>
+
+        <ul>
+            <li>Rule - A list of CSS instructions you use to style your HTML</li>
+            <li>Selector - The HTML element you wish to beautify with CSS</li>
+            <li>Property - What type of beautification will occur such as colour</li>
+            <li>Value - The specific lipstick you have chosen</li>
+        </ul>
+
+        <img src="https://i.pinimg.com/originals/5d/7a/82/5d7a82064300f646c963998ebb22ff70.gif" alt="Info-graphic
+        showing what a rule, selector, property and value looks like when written up in code" style="display:block; margin-left: auto ; margin-right: auto">
+        
+        <p>To center this image I had to adjust the inline style where left and right margins were set to auto
+            and I used the 'display' property with 'block' value.</p>
+
+    <h3>Editing the CSS</h3>
+        <p>Now I am moving into adding new properties to my CSS file, these include:</p>
+        <ul>
+            <li>Font Family - Choosing which font I use for each of my selectors</li>
+            <li>Color - This includes hexidecimal and rgb colours</li>
+            <li>Font Size - This takes 'px' (pixel), rem (elements are scalable in proportion to each other across 
+                screen sizes) and em (size scales relative to a parent) as values. For knowing which one to use when,
+                <a href="https://discuss.codecademy.com/t/when-should-i-use-px-vs-rem-vs-em/358152">this page should help</a>.</li>
+            <li>Background Image - Allows you to put in a background image for a given selector</li>
+            <li>Background Size - Adjust the background size, especially for images such as with zooming</li>
+        </ul>
+
+    <div class="new">
+        <h4 style="margin-top: 30px; margin-left: 30rem;">&sung;    A Whole New Div     &sung; </h4>
+            <p>Here we are, adding in a background image by using the background-image property in the CSS file.</p>
+            
+            <p>I have also used the background-size property to try make it more aesthetically pleasing. I also
+                increased the font size with 'rem' in my CSS file.</p>
+
+            <p>GRAPHIC DESIGN IS MY PASSION</p>
+    </div>
+
+    <h3>CSS ID Selectors</h3>
+
+        <p>Class selectors which we did just previously, allow us to beautify HTML elements of specific classes.
+            'Anchor elements' allow us to style individual elements uniquely and let other elements go unharmed.
+            This takes an element like 'p' with 'id' as the attribute. An ID attribute can only be used once because
+            it is unique to the element it is assigned to. If there is a CSS rule for a class attribute, the id 
+            attribute will over-rule it. To create a rule for an attribute in CSS you use a '#' instead of a '.'
+            If unsure between using 'id' or 'class' selectors, <a href="https://discuss.codecademy.com/t/when-should-i-use-id-selectors-vs-class-selectors/358157">this page may be helpful</a>.</p>
+        
+<h2>Boundaries and Space</h2>
+    <p>This is all about organising a webpage using the 'Box Model' for aesthetic reasons. Essentially it's 
+        boxes in boxes in boxes, with each box centered within the previous and works inward in order like this:
+        <ol>
+            <li>Margin - First box set with the 'margin' property; white space between elements</li>
+            <li>Border - 2nd box set with the 'border property; an outline</li>
+            <li>Padding - 3rd box - gives extra space between the content and the border</li>
+            <li>Content - Text, images, media etc</li>
+        </ol>
+    </p>
+    <h3>Borders</h3>
+
+        <p>Not really sure why they didn't just include this in the 'Styling CSS' component, but okay. I am working
+            on borders now. It's basically a picture-frame around content. A 'border' property takes 3 values:</p>
+            <ul>
+                <li>Thickness - Self-explanatory. It takes rem, em and px.</li>
+                <li>Type - Border style which may be solid, dotted or dashed.</li>
+                <li>Color - Again, using, named, HEX or RGB</li>
+            </ul>
+        <p>You can also change these individually using the properties 'border-style', 'border-color' and 'border-width'.
+            Originally, I was using the 'margin-left' etc properties to set a border around page, but I will now 
+            use the border property.
+        </p>
+
+    <h3>Padding</h3>
+
+        <p>Padding is a great way to avoid adding margins to just about everything. It's basically the space 
+            between an element's content and its border. Increasing the white space improves readability. Just 
+            like 'margin', you can also individually alter each side of padding using padding-left, right, etc, 
+            or you can input 4 values (one for each side) in the 'padding' property going from left to right, 
+            the order is top, right, bottom, left (clockwise).
+        </p>
+        <p>I have now added padding to my paragraphs and it has caused a bit of mayhem and uneveness which 
+            hopefully I can resolve.
+        </p>
+    <h3>Margin</h3> 
+        <p>The class is now going into detail about margins, however I have already set my margins using 'margin'
+            in the 'body' selector of my CSS file. I've also played with it in inline styling for images and used
+            the top and bottom margins for headings. This sets the amount of space between html elements.
+        </p>
+    <h3>Understanding Display</h3>
+        <p>Display types allow us to change the layout of our HTML elements on a page. There are two main ones:
+            Block and Inline, illustrated below where block shows a top-down configuration with each element given 
+            its own line on the webpage - this leads to more white-space. Inline configuration takes up the empty
+            space. If deciding between inline or block styles, <a href="https://discuss.codecademy.com/t/which-commonly-used-elements-are-display-block-which-are-display-inline/361264">this resource may be helpful</a>.
+        </p>
+            <img src="https://s3.amazonaws.com/codecademy-content/courses/make-a-website/img/block-inline.svg" style="background-color: rgb(24, 24, 68)"/>
+
+
+    <h3>Inline</h3>
+        <p>When using the 'display' property we can overwrite a number of display types. It took me some time
+            to wrap my head around it, but I went back up to the Nav practice area and used '.nav li' as a selector
+            to make it display the list in a line. I added padding so they didn't look so squished. Basically, this
+            arranges html elements on the same line as neighbouring ones.
+        </p>
+
+    <h3>Float</h3>
+        
+        <p>The 'float' property allows us to have elements which 'float' to the left or right within a line 
+            (not put into its own line) of neibouring html elements. I have used float right at the bottom of 
+            the page. I'm having trouble wrapping my head around the technicalities of 'float' so I'll just 
+            <a href="https://discuss.codecademy.com/t/does-the-float-property-affect-inline-elements-differently-than-block-elements/361265">stick this resource here</a>
+        .</p>
+
+    <h3>Flex</h3>
+
+            <p>Josh has asked me to explain <a href="https://discuss.codecademy.com/t/why-use-display-flex/361266">'flex'</a> to him when I am done. Unsure if I will do a good job, but
+                I'll try! So far I know it's a value of display and Flex apparently can be used to easily set 
+                multiple alignments on the page horizontally or vertically. To prevent child elements moving 
+                off the page we can use 'flex-wrap' with value 'wrap'...Okay! Let's have a go. :)
+            </p>
+            <div class="food">
+                <img src="https://images.unsplash.com/photo-1565967531713-45739e0cad63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" height = "300px">
+                <img src="https://images.unsplash.com/photo-1542803417-f2be3270347d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80" height = "300px">
+                <img src="https://images.unsplash.com/photo-1569494315581-abddb8d41cfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" height = "300px">
+                <img src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80" height = "300px">
+                <img src="https://images.unsplash.com/photo-1562486683-67d4d5886f99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80" height = "300px">
+
+            </div>
+            <p>Here I did a number of things:
+                <ul>
+                    <li>I created a 'div' called 'food'</li>
+                    <li>I adjusted the height of all images with inline styling to make them more harmonious</li>
+                    <li>I used my 'food' selector to display inline, then display flex for horizontal display</li>
+                    <li>Then I added the 'flex-wrap' so it stays within the page confines and 'justify-content' to
+                        center it all.</li>
+                    <li>Lastly, I used the 'food img' selector to add padding around my images on the right and bottom</li>
+                </ul>
+                </p>
+            <p>To flex vertically, <a href="https://discuss.codecademy.com/t/how-do-we-use-flexbox-display-flex-to-align-elements-vertically/361270">this explains it really well</a>.</p>
+        
+        <h3>Position</h3>
+
+            <p>The final lesson here is all about the 'position' property in CSS which allows us to place our html elements
+                into precise locations we want them to be. We can use the value 'relative' to position page elements on a 
+                webpage relative to where they would normally appear. By first setting position: relative, you
+                can then use the CSS properties top, left, bottom, and right to shift an element away from where 
+                it would have normally appeared on the page. We can even use 'position' to create 'clickable buttons'.
+            </p>
+
+            <div class="button"><a>Click Me!</a></div>
+
+            <p>To do this, I needed to have 3 selectors:
+                <ol>
+                    <li>Button - To manipulate margins</li>
+                    <li>Button a - To create a border, padding, position and cursor properties</li>
+                    <li>Button a:active - To create the click bounce movement thing using the 'top' property with a px value</li>
+                </ol>
+            </p>
+            <p>Other position values which use properties like top, right, left and bottom include:
+                <ul>
+                    <li>Position:Absolute - positioned in relation to the nearest positioned parent element. If no positioned 
+                        parent element, the element is positioned in relation to the html element</li>
+                    <li>Position:Fixed - the element is fixed in position and won't move even when scrolling</li>
+                </ul>
+            </p>
+
+
+
+    <p>Below I used 'id' attribute on a paragraph and added a copyright logo using the ampersand. I then 
+      edited the CSS file with a '#' before my 'id' selector (I called it 'anchoring').
+       </p>
+
+        <p id="anchoring">&copy; Bae Practise Blog</p>
+    </div>
+    
+    
+    </body>
+
+
+</html>
