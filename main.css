@@ -1,28 +1,31 @@
 body {
     background-color: whitesmoke;
+}
+
+.everything {
+    background-color: whitesmoke;
     font-size: large;
-    margin: 6rem;
+    margin: 0em 8em 0em 8em;
     font-family: Arial, sans-serif;
     line-height: 1.6em;
-    justify-content: center;
-  }
+    text-align: justify;
+}
   
   h1 {
     color: rgb(8, 110, 110);
-    margin-left: 20rem;
+    text-align: center;
     margin-bottom: 5rem;
     font-family: Arial, sans-serif;
   }
 
   h2 {
      color: rgb(10, 134, 134); 
-     margin-left: 50px;
      font-family: Arial, sans-serif;
   }
 
   h3 {
       color: rgb(87, 122, 82);
-      margin-left: 100px;
+      margin-left: 50px;
       font-family: Arial, sans-serif;
   }
 
@@ -33,7 +36,7 @@ body {
   }
 
   h5 {
-    justify-content: center;
+    text-align: center;
   }
 
   .selector {
@@ -51,8 +54,8 @@ body {
   }
 
   #anchoring {
-      font-size: 0.85rem;
-      float: right;
+      font-size: 1.5rem;
+      text-align: center;
   }
 
   p {
@@ -67,16 +70,19 @@ body {
   .food {
       display: inline;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
+
   }
 
   .food img {
       padding: 0 2em 2em;
+      max-width: 450px;
+
   }
 
   .button {
-      margin-left: 32.5rem;
+      text-align: center;
       
   }
 
@@ -90,5 +96,64 @@ body {
   
   .button a:active {
     top: 2px;
-  
   }
+
+nav {
+    margin: 2em;
+
+}
+
+nav p {
+    text-align: end;
+    display: inline;
+}
+
+.jumbotron {
+    display: flex;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80");
+    background-size: cover;
+    color: #ffffff;
+    height: 500px;
+    text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.col-sm-5 p {
+    text-align: center;
+}  
+
+.col-sm-5  {
+    text-align  : center;
+}  
+
+header {
+    background-color: darkseagreen;
+}
+
+header p {
+    display: inline-block;
+    font-size: 160%;
+    padding-right: 2em;
+    padding-top: 1em;
+}
+
+footer {
+    background-color: darkseagreen;
+    padding: 20px 0;
+    margin-top: 6rem;
+}
+
+footer ul {
+    list-style: none;
+    
+}
+
+footer .col-sm-2 {
+    padding-left: 30px;
+    
+}
+
+footer .col-sm-3 {
+    padding-right: 50px;
+    
+}
