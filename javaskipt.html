@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+    <title>Learning With CodeAcademy</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="./my first javaskipt.js"></script>
+</head>
+
+<body>
+
+    <header style="height:10rem">
+        <div class="row1">
+            <h1
+                style="text-align: left; float: left; color: whitesmoke; margin: .65em 0em 0em 1.6em; font-family:'Courier New', Courier, monospace; font-weight: bolder; font-size: 2.5em;">
+                My Code Diary</h1>
+            <div class="col-sm-15 text-right">
+                <p style="color: whitesmoke; font-weight: bold;">newest</p>
+                <p style="color: whitesmoke; font-weight: bold;">catalogue</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="everything">
+
+        <h1>Codecademy: Introduction to Javascript</h1>
+
+        <p>Because I had enjoyed/learned many a new thing in my last Codecademy lesson in Making a Website. I thought I
+            would learn another skill
+            that has no real relevance to the job I do that attempts to pay some of my bills. But maybe one day, killer
+            robots too will require
+            a speech pathologist. Or at least I will create one which does. Which is why all of this front-end dev will
+            be so useful. Even if he runs like
+            ass, he will be full of flex-wrap, aesthetically prescribed padding and perfectly justified content.
+        </p>
+
+        <p>To check out all of my JS, just inspect element and click on console!</p>
+
+        <h2>Introduction</h2>
+
+        <h3>Console</h3>
+
+        <p>Okay, so there is a lot of info here but the take home message is basically this: a console is useful for
+            devs to see errors and other important
+            info, but 'console' keyword is an object (collection of data and actions) - an action built into the
+            'console' object is '.log()' which will print
+            or log whatever we put in the parenthesis into the console.
+        </p>
+
+        <h3>Comments</h3>
+
+        <p>I already incidentally did this one when creating my JS file. To make comments in JS, simply use '//' to
+            create a single-line comment - this can take
+            up the whole line or it may be put at the end of a line of code. To make multi-line comments, start them
+            with '/*' and end them with '*/'. These are
+            great for keeping code organised and explaining components in plain English.
+        </p>
+
+        <h3>Data-types</h3>
+
+        <p>Data types are the labels we give to the different kinds of data that we use in programming. The fundamental
+            data types in JS are:
+            <ul>
+                <li>Number - primitive; self-explanatory, it's numbers, even decimalled numbers. If they have quotes
+                    around them they aren't numbers, but strings</li>
+                <li>String - primitive; text basically or anything (number, letter, spaces, symbols) that are put in ''
+                    or ""</li>
+                <li>Boolean - primitive; the true/false thing. boolean is basically true/false, on/off or yes/no,
+                    Boolean is an object representing true/false</li>
+                <li>Null - primitive; the absense of any value as shown by 'null' value</li>
+                <li>Undefinied - primitive; it is the equivalent of a shoulder shrug or side-eyed 'what?' like that bird
+                    meme</li>
+                <li>Symbol - primitive; unique identifiers</li>
+                <li>Object - collections of related data</li>
+            </ul>
+        </p>
+
+        <div class="images">
+
+            <img src="./birdmemecodecademy.jpg" />
+
+        </div>
+
+        <h3>Operators</h3>
+
+        <p>Arithmetic operators are built into JS, these include:
+            <ul>
+                <li>Add: +</li>
+                <li>Minus: -</li>
+                <li>Multiply: *</li>
+                <li>Divide: /</li>
+                <li>Remainder/Modulo: %, gives the left over number from a division</li>
+            </ul>
+        </p>
+
+        <h4>String Concatenation</h4>
+
+        <p>However, we can use operators on strings as well. Don't forget to include spaces though, unless you want them
+            to look smooshed!</p>
+
+        <h3>Properties</h3>
+
+        <p>Objects, including instances of data types, can have properties, stored information. We can add or retrieve
+            properties from our data types. We do this by appending the stuff in the parenthesis with a period and the
+            property name. For
+            example if we go ('puppy'.length), the program will retrieve '5' as that is how many characters are in the
+            string 'puppy'.
+        </p>
+
+        <h3>Methods</h3>
+
+        <p>Objects, including instances of data types, can have methods which perform actions. Methods are called by
+            appending the object or instance with a period, the method name, and parentheses. For example:
+            'hello'.toUpperCase().
+            We can access properties and methods by using the ., dot operator. These are actions that we can do in JS -
+            JS comes with many string methods as well. We call these methods using a dot operator, just like properties.
+            A list
+            of string methods can be found <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">here</a>.For
+            more on the who, what, when, where, why and how of documentation, <a
+                href="https://www.youtube.com/watch?v=s1PLS3SQHQ0&feature=youtu.be">click here</a>.</p>
+
+        <h3>Built-in Objects</h3>
+
+        <p>So there are loads of <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">objects
+                built
+                built into JS</a>. The cool thing about these objects is that they have methods (woooh!). You can also
+            make your own objects if you
+            are skilled. Built-in objects, like 'Math', are collections of methods and properties that JavaScript
+            provides.</p>
+
+        <h2>Variables</h2>
+
+        <p>A variable is like a box or container for information which gets stored in the computer's memory. Some
+            examples
+            of info stored in variables include usernames, account number or personalised greetings. Basically,
+            variables label and store data in
+            memory. With variables you can:
+
+            <ul>
+                <li>Create a variable with a descriptive name</li>
+                <li>Store or update information stored in a variable.</li>
+                <li>Reference or “get” information stored in a variable</li>
+            </ul>
+
+            It is important to distinguish that variables are not values; they contain values and represent them
+            with a name. Basically, visualise variables as box labels, with values contained inside them. </p>
+
+        <img src="image for variable boxes">
+
+        <h3>Var, let and const</h3>
+
+        <p>Let’s consider the example above:
+
+            var, short for variable, is a JavaScript keyword that creates, or declares, a new variable.
+            myName is the variable’s name. Capitalizing in this way is a standard convention in JavaScript called camel
+            casing. In camel casing you group words into one, the first word is lowercase, then every word that follows
+            will have its first letter uppercased. (e.g. camelCaseEverything).
+            = is the assignment operator. It assigns the value ('Arya') to the variable (myName).
+            'Arya' is the value assigned (=) to the variable myName. You can also say that the myName variable is
+            initialized with a value of 'Arya'.
+            After the variable is declared, the string value 'Arya' is printed to the console by referencing the
+            variable name: console.log(myName).
+
+            There are a few general rules for naming variables:
+
+            Variable names cannot start with numbers.
+            Variable names are case sensitive, so myName and myname would be different variables. It is bad practice to
+            create two variables that have the same name using different cases.
+            Variable names cannot be the same as keywords. For a comprehensive list of keywords check out MDN’s keyword
+            documentation.
+        </p>
+
+        <p> The let keyword signals that the variable can be reassigned a different value. Another concept that we
+            should be aware of when using let (and even var) is that we can declare a variable without assigning the
+            variable a value. In such a case, the variable will be automatically initialized with a value of undefined.
+        </p>
+        <p>The 'const' keyword is short for the word constant. Just like with var and let you can store any value in a
+            const variable. The way you declare a const variable and assign a value to it follows the same structure as
+            let and var. However, a const variable cannot be reassigned because it is constant. If you try to reassign a
+            const variable, you’ll get a TypeError.
+
+            Constant variables must be assigned a value when declared. If you try to declare a const variable without a
+            value, you’ll get a SyntaxError.
+
+            If you’re trying to decide between which keyword to use, let or const, think about whether you’ll need to
+            reassign the variable later on. If you do need to reassign the variable use let, otherwise, use const. </p>
+
+        <h3>Mathematical Assignment Operators</h3>
+
+        <p>We can assign a variable with a value which can be used in mathematical operations. If we use say a += or -=,
+            the variable value we assigned
+            can be modified. Observe the example below:
+        </p>
+
+        <h4>Increment and Decrement Operator</h4>
+        <p>The increment operator (++), which increases the variable value by 1, and the decrement operator (--), which
+            decreases the value by 1. Like
+            the mathematical assignment operators, variable’s value is updated and assigned as the new value of that
+            variable.
+        </p>
+        <h4>typeof Operator</h4>
+
+        <p>While writing code, it can be useful to keep track of the data types of the variables in your program. If you
+            need to check the data type of a variable’s value, you can use the typeof operator.
+
+            The typeofoperator checks the value to its right and returns, or passes back, a string of the data type.
+        </p>
+
+        <h3>String Concatenation and Interpolation with Variables</h3>
+
+        <p>We can connect strings in a variable. Basically, '+' can be used to combine two string values even if those
+            values are being stored in variables.</p>
+
+        <p>We can insert/interpolate variables into strings using template literals.
+            Notice that:
+
+            a template literal is wrapped by backticks ` (this key is usually located on the top of your keyboard, left
+            of the 1 key).
+            Inside the template literal, you’ll see a placeholder, ${myPet}. The value of myPet is inserted into the
+            template literal.
+            When we interpolate `I own a pet ${myPet}.`, the output we print is the string: 'I own a pet armadillo.'One
+            of the biggest benefits to using template literals is the readability of the code. Using template literals,
+            you can more easily tell what the new string will be. You also don’t have to worry about escaping double
+            quotes or single quotes.
+
+        </p>
+
+        <h3>Summary Notes</h3>
+
+        <p>Nice work! This lesson introduced you to variables, a powerful concept you will use in all your future
+            programming endeavors.
+
+            Let’s review what we learned:
+
+            Variables hold reusable data in a program and associate it with a name.
+            Variables are stored in memory.
+            The var keyword is used in pre-ES6 versions of JS.
+            let is the preferred way to declare a variable when it can be reassigned, and const is the preferred way to
+            declare a variable with a constant value.
+            Variables that have not been initialized store the primitive data type undefined.
+            Mathematical assignment operators make it easy to calculate a new value and assign it to the same variable.
+            The + operator is used to concatenate strings including string values held in variables
+            In ES6, template literals use backticks ` and ${} to interpolate values into a string.
+            The typeof keyword returns the data type (as a string) of a value.
+
+        </p>
+        <h3>Extra Credit</h3>
+        <p>To learn more about variables take on these challenges!
+
+            Create variables and manipulate the values
+            Check what happens when you try concatenating strings using variables of different data types
+            Interpolate multiple variables into a string
+            See what happens when you use console.log() on variables declared by different keywords (const, let, var)
+            before they’re defined. For example:
+
+            Find the data type of a variable’s value using the typeof keyword on a variable.
+            Use typeof to find the data type of the resulting value when you concatenate variables containing two
+            different data types.
+        </p>
+
+        <h2>Conditional Statements</h2>
+
+        <p>We are advancing quickly through the world of programming. Now we are moving to some core statements and
+            operators of JS. </p>
+
+
+        <h3>If Statements</h3>
+
+        <p>The 'if' keyword is used for performing a task based on a particular condition. For example, if the dog
+            barks, we will ask it what's wrong,
+            but if we are busy we might instead just tell it to be quiet. An if statement is comprised of:
+            <ul>
+                <li>An 'if' keyword followed by parentheses which are then followed by a code block/block statement
+                    indicated by curly braces</li>
+                <li>The 'if's parentheses take condition value. Can put anything into there, even a variable</li>
+                <li>The condition value will determine if/how the block statement runs. For example, if the value is
+                    true, then the block runs, and vice versa with false</li>
+            </ul>
+        </p>
+
+        <h4>If...else statements</h4>
+
+        <p>In many cases, we’ll have code we want to run if our condition evaluates to false. If we wanted to add some
+            default behavior to the if statement, we can add an else statement to run a block of code when the condition
+            evaluates to false.
+            An else statement must be paired with an if statement, and together they are referred to as an if...else
+            statement.
+        </p>
+
+        <h4>Comparison Operators</h4>
+        <p>
+
+            When writing conditional statements, sometimes we need to use different types of operators to compare
+            values. These operators are called comparison operators.
+
+            Here is a list of some handy comparison operators and their syntax:
+
+            Less than: < Greater than:>
+                Less than or equal to: <= Greater than or equal to:>=
+                    Is equal to: ===
+                    Is NOT equal to: !==
+
+                    Comparison operators compare the value on the left with the value on the right.
+                    It can be helpful to think of comparison statements as questions. When the answer is “yes”, the
+                    statement evaluates to true, and when the answer is “no”, the statement evaluates to false.
+                    All comparison statements evaluate to either true or false and are made up of:
+
+                    Two values that will be compared.
+                    An operator that separates the values and compares them accordingly (>, <, <=,>=,===,!==).
+        </p>
+
+        <h4>Logical Operators</h4>
+
+        <p>Working with conditionals means that we will be using booleans, true or false values. In JavaScript, there
+            are operators that work with boolean values known as logical operators. We can use logical operators to add
+            more sophisticated logic to our conditionals. There are three logical operators:
+
+            the and operator (&&)
+            the or operator (||)
+            the not operator, otherwise known as the bang operator (!)
+            When using the && operator, both conditions must evaluate to true for the entire condition to evaluate to
+            true and execute. Otherwise, if either condition is false, the && condition will evaluate to false and the
+            else block will execute.
+
+            If we only care about either condition being true, we can use the || operator.
+            When using the || operator, only one of the conditions must evaluate to true for the overall statement to
+            evaluate to true. In the code example above, if either day === 'Saturday' or day === 'Sunday' evaluates to
+            true the if‘s condition will evaluate to true and its code block will execute. If the first condition in an
+            || statement evaluates to true, the second condition won’t even be checked. Only if day === 'Saturday'
+            evaluates to false will day === 'Sunday' be evaluated. The code in the else statement above will execute
+            only if both comparisons evaluate to false.
+
+            The ! not operator reverses, or negates, the value of a boolean.
+            Essentially, the ! operator will either take a true value and pass back false, or it will take a false value
+            and pass back true.
+
+            Logical operators are often used in conditional statements to add another layer of logic to our code.
+            mood = 'sleepy' is assigning the value ‘sleepy’ to the variable mood.
+            mood === 'sleepy' is testing whether the variable mood has been assigned the value ‘sleepy’.
+            we can use the order of operations to our advantage when assigning operators for negation (!)</p>
+        <h4>Truthy and Falsy</h4>
+
+        <p>
+            Let’s consider how non-boolean data types, like strings or numbers, are evaluated when checked inside a
+            condition.
+
+            Sometimes, you’ll want to check if a variable exists and you won’t necessarily want it to equal a specific
+            value— you’ll only check to see if the variable has been assigned a value.
+            The code block in the if statement will run because myVariable has a truthy value; even though the value of
+            myVariable is not explicitly the value true, when used in a boolean or conditional context, it evaluates to
+            true because it has been assigned a non-falsy value.
+
+            So which values are falsy— or evaluate to false when checked as a condition? The list of falsy values
+            includes:
+
+            0
+            Empty strings like "" or ''
+            null which represent when there is no value at all
+            undefined which represent when a declared variable lacks a value
+            NaN, or Not a Number
+
+            ruthy and falsy evaluations open a world of short-hand possibilities!
+
+            Say you have a website and want to take a user’s username to make a personalized greeting. Sometimes, the
+            user does not have an account, making the username variable falsy.
+            If you combine your knowledge of logical operators you can use a short-hand for the code above. In a boolean
+            condition, JavaScript assigns the truthy value to a variable if you use the || operator in your assignment.
+            Because || or statements check the left-hand condition first, the variable defaultName will be assigned the
+            actual value of username if is truthy, and it will be assigned the value of 'Stranger' if username is falsy.
+            This concept is also referred to as short-circuit evaluation.
+
+        </p>
+        <h4>Ternary Operator</h4>
+        <p>In the spirit of using short-hand syntax, we can use a ternary operator to simplify an if...else statement.
+            In the example above:
+
+            The condition, isNightTime, is provided before the ?.
+            Two expressions follow the ? and are separated by a colon :.
+            If the condition evaluates to true, the first expression executes.
+            If the condition evaluates to false, the second expression executes.
+
+            Like if...else statements, ternary operators can be used for conditions which evaluate to true or false.
+
+        </p>
+        <h4>Else...if Statements</h4>
+        <p>
+            We can add more conditions to our if...else with an else if statement. The else if statement allows for more
+            than two possible outcomes. You can add as many else if statements as you’d like, to make more complex
+            conditionals!
+            The else if statement always comes after the if statement and before the else statement. The else if
+            statement also takes a condition.
+            The else if statements allow you to have multiple possible outcomes. if/else if/else statements are read
+            from top to bottom, so the first condition that evaluates to true from the top to bottom is the block that
+            gets executed.
+
+            In the example above, since stopLight === 'red' evaluates to false and stopLight === 'yellow' evaluates to
+            true, the code inside the first else if statement is executed. The rest of the conditions are not evaluated.
+            If none of the conditions evaluated to true, then the code in the else statement would have executed.
+        </p>
+
+        <h3>Switch Keyboard</h3>
+        <p>else if statements are a great tool if we need to check multiple conditions. In programming, we often find
+            ourselves needing to check multiple values and handling each of them differently.
+            In the code above, we have a series of conditions checking for a value that matches a groceryItem variable.
+            Our code works fine, but imagine if we needed to check 100 different values! Having to write that many else
+            if statements sounds like a pain!
+
+            A switch statement provides an alternative syntax that is easier to read and write.
+
+            The switch keyword initiates the statement and is followed by ( ... ), which contains the value that each
+            case will compare. In the example, the value or expression of the switch statement is groceryItem.
+            Inside the block, { ... }, there are multiple cases. The case keyword checks if the expression matches the
+            specified value that comes after it. The value following the first case is 'tomato'. If the value of
+            groceryItem equalled 'tomato', that case‘s console.log() would run.
+            The value of groceryItem is 'papaya', so the third case runs— Papayas are $1.29 is logged to the console.
+            The break keyword tells the computer to exit the block and not execute any more code or check any other
+            cases inside the code block. Note: Without the break keyword at the end of each case, the program would
+            execute the code for all matching cases and the default code as well. This behavior is different from
+            if/else conditional statements which execute only one block of code.
+            At the end of each switch statement, there is a default statement. If none of the cases are true, then the
+            code in the default statement will run.
+
+        </p>
+        <h3>That's A Wrap For Conditionals!</h3>
+        <p>Way to go! Here are some of the major concepts for conditionals:
+
+            An if statement checks a condition and will execute a task if that condition evaluates to true.
+            if...else statements make binary decisions and execute different code blocks based on a provided condition.
+            We can add more conditions using else if statements.
+            Comparison operators, including <,>, <=,>=, ===, and !== can compare two values.
+                    The logical and operator, &&, or “and”, checks if both provided expressions are truthy.
+                    The logical operator ||, or “or”, checks if either provided expression is truthy.
+                    The bang operator, !, switches the truthiness and falsiness of a value.
+                    The ternary operator is shorthand to simplify concise if...else statements.
+                    A switch statement can be used to simplify the process of writing multiple else if statements. The
+                    break keyword stops the remaining cases from being checked and executed in a switch statement.
+
+                    Download the Conditionals: Cheat Sheet to help you remember the content covered in this <a
+                        href='https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-control-flow/cheatsheet'>this
+                        cheatsheet should help</a>.
+        </p>
+
+        <h2>Functions</h2>
+        <p>One way to create a function is by using a function declaration. Just like how a variable declaration binds a
+            value to a variable name, a function declaration binds a function to a name, or an identifier.
+            A function declaration consists of:
+
+            The function keyword.
+            The name of the function, or its identifier, followed by parentheses.
+            A function body, or the block of statements required to perform a specific task, enclosed in the function’s
+            curly brackets, { }.
+
+            A function declaration is a function that is bound to an identifier, or name. In the next exercise we’ll go
+            over how to run the code inside the function body.
+
+            We should also be aware of the hoisting feature in JavaScript which allows access to function declarations
+            before they’re defined.
+        </p>
+        <img style='display: block; margin: auto'
+            src='https://s3.amazonaws.com/codecademy-content/courses/learn-javascript-functions/Diagram/declaration.svg' />
+
+        <p>When first learning how to calculate the area of a rectangle, there’s a sequence of steps to calculate the
+            correct answer:
+
+            Measure the width of the rectangle.
+            Measure the height of the rectangle.
+            Multiply the width and height of the rectangle.
+
+            With practice, you can calculate the area of the rectangle without being instructed with these three steps
+            every time.
+            In programming, we often use code to perform a specific task multiple times. Instead of rewriting the same
+            code, we can group a block of code together and associate it with one task, then we can reuse that block of
+            code whenever we need to perform the task again. We achieve this by creating a function. A function is a
+            reusable block of code that groups together a sequence of statements to perform a specific task.
+
+            In this lesson, you will learn how to create and use functions, and how they can be used to create clearer
+            and more concise code.
+            Take a look at the provided GIF. It shows a function, named addOneSide, adding an additional side to
+            different shape inputs. Notice how there is only one function, represented by the box, that is used to
+            transform individual shapes (inputs) into new shapes (outputs).
+            You can read up on hoisting <a href="https://developer.mozilla.org/en-US/docs/Glossary/Hoisting">here</a>.
+        </p>
+        <img style='display: block; margin: auto'
+            src='https://s3.amazonaws.com/codecademy-content/courses/learn-javascript-functions/functions_2.gif' />
+
+        <p>As we saw in previous exercises, a function declaration binds a function to an identifier.
+
+            However, a function declaration does not ask the code inside the function body to run, it just declares the
+            existence of the function. The code inside a function body runs, or executes, only when the function is
+            called. To call a function in your code, you type the function name followed by parentheses.
+            This function call executes the function body, or all of the statements between the curly braces in the
+            function declaration.
+            We can call the same function as many times as needed.
+
+            The image below shows the flow of execution (in arrows) and the general structure of code using a function.
+        </p>
+
+        <img style='display:block; margin:auto'
+            src="https://s3.amazonaws.com/codecademy-content/courses/learn-javascript-functions/Diagram/function+execution.svg" />
+
+        <h3>Parameters and Arguments</h3>
+        <p>Basically, 'do that, using dis'. So far, the functions we’ve created execute a task without an input.
+            However,
+            some functions can take inputs and use the inputs to perform a task. When declaring a function, we can
+            specify its parameters. Parameters allow functions to accept input(s) and perform a task using the input(s).
+            We use parameters as placeholders for information that will be passed to the function when it is called.
+
+            <img style='display:block; margin:auto'
+                src="https://s3.amazonaws.com/codecademy-content/courses/learn-javascript-functions/Diagram/function+parameters.svg" />
+            In the diagram above, calculateArea(), computes the area of a rectangle, based on two inputs, width and
+            height. The parameters are specified between the parenthesis as width and height, and inside the function
+            body, they act just like regular variables. width and height act as placeholders for values that will be
+            multiplied together.
+
+            When calling a function that has parameters, we specify the values in the parentheses that follow the
+            function name. The values that are passed to the function when it is called are called arguments. Arguments
+            can be passed to the function as values or variables.
+            <img style='display:block; margin:auto'
+                src="https://s3.amazonaws.com/codecademy-content/courses/learn-javascript-functions/Diagram/by_value.svg" />
+            In the function call above, the number 10 is passed as the width and 6 is passed as height. Notice that the
+            order in which arguments are passed and assigned follows the order that the parameters are declared.
+            <img style='display:block; margin:auto'
+                src="https://s3.amazonaws.com/codecademy-content/courses/learn-javascript-functions/Diagram/by_variable.svg" />
+            The variables rectWidth and rectHeight are initialized with the values for the height and width of a
+            rectangle before being used in the function call.
+
+            By using parameters, calculateArea() can be reused to compute the area of any rectangle! Functions are a
+            powerful tool in computer programming so let’s practice creating and calling functions with parameters.
+
+            Here's the <a
+                href='https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-functions/cheatsheet'>cheatsheet</a>
+        </p>
+        <h3>Default Parameters</h3>
+        <p>One of the features added in ES6 is the ability to use default parameters. Default parameters allow
+            parameters to have a predetermined value in case there is no argument passed into the function or if the
+            argument is undefined when called.
+
+
+            In the example above, we used the = operator to assign the parameter name a default value of 'stranger'.
+            This is useful to have in case we ever want to include a non-personalized default greeting!
+
+            When the code calls greeting('Nick') the value of the argument is passed in and, 'Nick', will override the
+            default parameter of 'stranger' to log 'Hello, Nick!' to the console.
+
+            When there isn’t an argument passed into greeting(), the default value of 'stranger' is used, and 'Hello,
+            stranger!' is logged to the console.
+
+            By using a default parameter, we account for situations when an argument isn’t passed into a function that
+            is expecting an argument.
+        </p>
+        <h3>Return</h3>
+        <p>When a function is called, the computer will run through the function’s code and evaluate the result of
+            calling the function. By default that resulting value is undefined.
+            In the code example, we defined our function to calculate the area of a width and height parameter. Then
+            rectangleArea() is invoked with the arguments 5 and 7. But when we went to print the results we got
+            undefined. Did we write our function wrong? No! In fact, the function worked fine, and the computer did
+            calculate the area as 35, but we didn’t capture it. So how can we do that? With the keyword return!
+            To pass back information from the function call, we use a return statement. To create a return statement, we
+            use the return keyword followed by the value that we wish to return. Like we saw above, if the value is
+            omitted, undefined is returned instead.
+
+            <img style='display: block; margin: auto'
+                src="https://s3.amazonaws.com/codecademy-content/courses/learn-javascript-functions/Diagram/function+return.svg" />
+            When a return statement is used in a function body, the execution of the function is stopped and the code
+            that follows it will not be executed.
+            If an argument for width or height is less than 0, then rectangleArea() will return 'You need positive
+            integers to calculate area!'. The second return statement width * height will not run.
+
+            The return keyword is powerful because it allows functions to produce an output. We can then save the output
+            to a variable for later use.
+        </p>
+        <h3>Helper Functions</h3>
+        <p>We can also use the return value of a function inside another function. These functions being called within
+            another function are often referred to as helper functions. Since each function is carrying out a specific
+            task, it makes our code easier to read and debug if necessary.
+            We can use functions to section off small bits of logic or tasks, then use them when we need to. Writing
+            helper functions can help take large and difficult tasks and break them into smaller and more manageable
+            tasks.
+        </p>
+        <h3>Function Expressions</h3>
+        <p>Another way to define a function is to use a function expression. To define a function inside an expression,
+            we can use the function keyword. In a function expression, the function name is usually omitted. A function
+            with no name is called an anonymous function. A function expression is often stored in a variable in order
+            to refer to it.
+            <img style="display: block; margin: auto;"
+                src='https://s3.amazonaws.com/codecademy-content/courses/learn-javascript-functions/Diagram/expression.svg' />
+            To declare a function expression:
+
+            Declare a variable to make the variable’s name be the name, or identifier, of your function. Since the
+            release of ES6, it is common practice to use const as the keyword to declare the variable.
+
+            Assign as that variable’s value an anonymous function created by using the function keyword followed by a
+            set of parentheses with possible parameters. Then a set of curly braces that contain the function body.
+
+            To invoke a function expression, write the name of the variable in which the function is stored followed by
+            parentheses enclosing any arguments being passed into the function.
+            Unlike function declarations, function expressions are not hoisted so they cannot be called before they are
+            defined.
+        </p>
+        <h3>Arrow Functions/Phat Arrows</h3>
+        <p>ES6 introduced arrow function syntax, a shorter way to write functions by using the special “fat arrow” () =>
+            notation.
+
+            Arrow functions remove the need to type out the keyword function every time you need to create a function.
+            Instead, you first include the parameters inside the ( ) and then add an arrow => that points to the
+            function body surrounded in { }
+            It’s important to be familiar with the multiple ways of writing functions because you will come across each
+            of these when reading other JavaScript code. </p>
+        <h3>Concise Body Arrow Functions</h3>
+        <p>
+            JavaScript also provides several ways to refactor arrow function syntax. The most condensed form of the
+            function is known as concise body. We’ll explore a few of these techniques below:
+
+            Functions that take only a single parameter do not need that parameter to be enclosed in parentheses.
+            However, if a function takes zero or multiple parameters, parentheses are required.
+            <img style='display: block; margin: auto;'
+                src='https://s3.amazonaws.com/codecademy-content/courses/learn-javascript-functions/Diagram/parameters.svg' />
+            A function body composed of a single-line block does not need curly braces. Without the curly braces,
+            whatever that line evaluates will be automatically returned. The contents of the block should immediately
+            follow the arrow => and the return keyword can be removed. This is referred to as implicit return
+            <img style="margin: auto; display: block;"
+                src="https://s3.amazonaws.com/codecademy-content/courses/learn-javascript-functions/Diagram/return.svg" />
+            Notice the following changes:
+
+
+            The parentheses around num have been removed, since it has a single parameter.
+            The curly braces { } have been removed since the function consists of a single-line block.
+            The return keyword has been removed since the function consists of a single-line block.
+
+        </p>
+        <h3>Summary of Functions</h3>
+        <p>Give yourself a pat on the back, you just navigated through functions!
+
+            In this lesson, we covered some important concepts about functions:
+
+            A function is a reusable block of code that groups together a sequence of statements to perform a specific
+            task.
+
+            A function declaration :
+            A parameter is a named variable inside a function’s block which will be assigned the value of the argument
+            passed in when the function is invoked:
+
+            ES6 introduces new ways of handling arbitrary parameters through default parameters which allow us to assign
+            a default value to a parameter in case no argument is passed into the function.
+
+            To return a value from a function, we use a return statement.
+
+            To define a function using function expressions:
+            It’s good to be aware of the differences between function expressions, arrow functions, and function
+            declarations. As you program more in JavaScript, you’ll see a wide variety of how these function types are
+            used.
+        </p>
+        <h2>Scope</h2>
+        <p>An important idea in programming is scope. Scope defines where variables can be accessed or referenced. While
+            some variables can be accessed from anywhere within a program, other variables may only be available in a
+            specific context.
+
+            You can think of scope like the view of the night sky from your window. Everyone who lives on the planet
+            Earth is in the global scope of the stars. The stars are accessible globally. Meanwhile, if you live in a
+            city, you may see the city skyline or the river. The skyline and river are only accessible locally in your
+            city, but you can still see the stars that are available globally.
+
+            Over the next few exercises, we’ll explore how scope relates to variables and learn best practices for
+            variable declaration.
+        </p>
+        <h3>Blocks and Scope</h3>
+        <p>Before we talk more about scope, we first need to talk about blocks.
+
+            We’ve seen blocks used before in functions and if statements. A block is the code found inside a set of
+            curly braces {}. Blocks help us group one or more statements together and serve as an important structural
+            marker for our code.
+            Here we can identify code within and outside the block
+        </p>
+        <h3>Global Scope</h3>
+        <p>Scope is the context in which our variables are declared. We think about scope in relation to blocks because
+            variables can exist either outside of or within these blocks.
+
+            In global scope, variables are declared outside of blocks. These variables are called global variables.
+            Because global variables are not bound inside a block, they can be accessed by any code in the program,
+            including code in blocks.
+        </p>
+        <h3>Block Scope</h3>
+        <p>The next context we’ll cover is block scope. When a variable is defined inside a block, it is only accessible
+            to the code within the curly braces {}. We say that variable has block scope because it is only accessible
+            to the lines of code within that block.
+
+            Variables that are declared with block scope are known as local variables because they are only available to
+            the code that is part of the same block.
+        </p>
+        <h3>Scope Pollution</h3>
+        <p>It may seem like a great idea to always make your variables accessible, but having too many global variables
+            can cause problems in a program.
+
+            When you declare global variables, they go to the global namespace. The global namespace allows the
+            variables to be accessible from anywhere in the program. These variables remain there until the program
+            finishes which means our global namespace can fill up really quickly.
+
+            Scope pollution is when we have too many global variables that exist in the global namespace, or when we
+            reuse variables across different scopes. Scope pollution makes it difficult to keep track of our different
+            variables and sets us up for potential accidents. For example, globally scoped variables can collide with
+            other variables that are more locally scoped, causing unexpected behavior in our code. While it’s important
+            to know what global scope is, it’s best practice to not define variables in the global scope.
+
+            You’ll notice that the global variable stars was reassigned to 'Sirius'. In other words, we changed the
+            value of the global stars variable but it’s not easy to read what exactly happened. This is bad practice in
+            code maintainability and could impact our program in ways we do not intend.
+        </p>
+        <h3>Practice Good Scoping</h3>
+        <p>
+            Given the challenges with global variables and scope pollution, we should follow best practices for scoping
+            our variables as tightly as possible using block scope.
+
+            Tightly scoping your variables will greatly improve your code in several ways:
+
+            It will make your code more legible since the blocks will organize your code into discrete sections.
+            It makes your code more understandable since it clarifies which variables are associated with different
+            parts of the program rather than having to keep track of them line after line!
+            It’s easier to maintain your code, since your code will be modular.
+            It will save memory in your code because it will cease to exist after the block finishes running.
+            Here, you’ll notice:
+            <img style='display: block; margin: auto; width: 400px;' src='./scopepic.png' />
+            We create a variable dusk inside the logSkyColor() function.
+            After the if statement, we define a new code block with the {} braces. Here we assign a new value to the
+            variable color if the if statement is truthy.
+            Within the if block, the color variable holds the value 'pink', though outside the if block, in the function
+            body, the color variable holds the value 'blue'.
+            While we use block scope, we still pollute our namespace by reusing the same variable name twice. A better
+            practice would be to rename the variable inside the block.
+
+            Block scope is a powerful tool in JavaScript, since it allows us to define variables with precision, and not
+            pollute the global namespace. If a variable does not need to exist outside a block— it shouldn’t!
+        </p>
+        <h3>Summary of Scope</h3>
+        <p>In this lesson, you learned about scope and how it impacts the accessibility of different variables.
+
+            Let’s review the following terms:
+
+            Scope is the idea in programming that some variables are accessible/inaccessible from other parts of the
+            program.
+            Blocks are statements that exist within curly braces {}.
+            Global scope refers to the context within which variables are accessible to every part of the program.
+            Global variables are variables that exist within global scope.
+            Block scope refers to the context within which variables that are accessible only within the block they are
+            defined.
+            Local variables are variables that exist within block scope.
+            Global namespace is the space in our code that contains globally scoped information.
+            Scope pollution is when too many variables exist in a namespace or variable names are reused.
+
+            As you continue your coding journey, remember to use best practices when declaring your variables! Scoping
+            your variables tightly will ensure that your code has clean, organized, and modular logic.
+
+            Download the Scope: <a
+                href='https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-scope/cheatsheet'>Cheat
+                Sheet</a>. </p>
+
+
+        <h2>Arrays</h2>
+        <p>Arrays are ways we for organizing and storing data is a foundational concept of programming. Arrays are
+            JavaScript’s way of making lists. Arrays can store any data types (including strings, numbers, and
+            booleans). Like lists, arrays are ordered, meaning each item has a numbered position. </p>
+        <h3>Creating arrays</h3>
+        <p>One way we can create an array is to use an array literal. An array literal creates an array by wrapping
+            items in square brackets []. Remember from the previous exercise, arrays can store any data type — we can
+            have an array that holds all the same data types or an array that holds different data types. Let’s take a
+            closer look at the syntax in the array example:
+
+            The array is represented by the square brackets [] and the content inside.
+            Each content item inside an array is called an element.
+            There are three different elements inside the array.
+            Each element inside the array is a different data type.
+
+            We can also save an array to a variable.
+            <img style='display:block; margin:auto'
+                src='https://s3.amazonaws.com/codecademy-content/courses/learn-javascript-arrays/array+literal.svg' />
+        </p>
+        <h3>Accessing Elements</h3>
+        <p>Each element in an array has a numbered position known as its index. We can access individual items using
+            their index, which is similar to referencing an item in a list based on the item’s position.
+
+            Arrays in JavaScript are zero-indexed, meaning the positions start counting from 0 rather than 1. Therefore,
+            the first item in an array will be at position 0.
+            <img style='display:block; margin:auto'
+                src='https://s3.amazonaws.com/codecademy-content/courses/learn-javascript-arrays/array+indices.svg/'>
+            In the code snippet above:
+
+            cities is an array that has three elements.
+            We’re using bracket notation, [] with the index after the name of the array to access the element.
+            cities[0] will access the element at index 0 in the array cities. You can think of cities[0] as accessing
+            the space in memory that holds the string 'New York'.
+
+            You can also access individual characters in a string using bracket notation and the index.</p>
+
+        <h3>Update Elements</h3>
+        <p>In the previous exercise, you learned how to access elements inside an array or a string by using an index.
+            Once you have access to an element in an array, you can update its value.
+            <img style='display: block; margin: auto;' src='./seasons.png' />
+            In the example above, the seasons array contained the names of the four seasons.
+
+            However, we decided that we preferred to say 'Autumn' instead of 'Fall'.
+
+            The line, seasons[3] = 'Autumn'; tells our program to change the item at index 3 of the seasons array to be
+            'Autumn' instead of what is already there.
+
+        </p>
+        <h3>Arrays with let or const</h3>
+        <p>You may recall that you can declare variables with both the let and const keywords. Variables declared with
+            let can be reassigned.
+
+            Variables declared with the const keyword cannot be reassigned. However, elements in an array declared with
+            const remain mutable. Meaning that we can change the contents of a const array, but cannot reassign a new
+            array or a different value.
+        </p>
+        <h3>.length</h3>
+        <p>One of an array’s built-in properties is length and it returns the number of items in the array. We access
+            the .length property just like we do with strings.
+            We use dot notation, chaining a period with the property name to the array, to access the length property of
+            the newYearsResolutions array.
+            Then we log the length of newYearsResolution to the console.
+            Since newYearsResolution has two elements, so 2 would be logged to the console.
+
+            When we want to know how many elements are in an array, we can access the .length property.
+        </p>
+        <h3>.push() Method</h3>
+        <p>Let’s learn about some built-in JavaScript methods that make working with arrays easier. These methods are
+            specifically called on arrays to make common tasks, like adding and removing elements, more straightforward.
+            So, how does .push() work?
+
+            We access the push method by using dot notation, connecting push to itemTracker with a period.
+            Then we call it like a function. That’s because .push() is a function and one that JavaScript allows us to
+            use right on an array.
+            .push() can take a single argument or multiple arguments separated by commas. In this case, we’re adding two
+            elements: 'item 3' and 'item 4' to itemTracker.
+            Notice that .push() changes, or mutates, itemTracker. You might also see .push() referred to as a
+            destructive array method since it changes the initial array.
+
+            If you’re looking for a method that will mutate an array by adding elements to it, then .push() is the
+            method for you!
+        </p>
+        <h3>.pop(). </h3>
+        <p>When you need to mutate an array by removing the last element, use .pop(). </p>
+        <h3>More Array Methods</h3>
+        <p>There are many more array methods than just .push() and .pop(). You can read about all of the array methods
+            that exist on the Mozilla Developer Network (MDN) array documentation.
+
+            .pop() and .push() mutate the array on which they’re called. However, there are times that we don’t want to
+            mutate the original array and we can use non-mutating array methods. Be sure to check MDN to understand the
+            behavior of the method you are using.
+
+            Some arrays methods that are available to JavaScript developers include: .join(), .slice(), .splice(),
+            .shift(), .unshift(), and .concat() amongst many others. Using these built-in methods make it easier to do
+            some common tasks when working with arrays.
+
+            We used shift, unshift, slice and indexOf</p>
+        <h3>Arrays and Functions</h3>
+        <p>Throughout the lesson we went over arrays being mutable, or changeable. Well what happens if we try to change
+            an array inside a function? Does the array keep the change after the function call or is it scoped to inside
+            the function?
+
+            Take a look at the following example where we call .push() on an array inside a function. Recall, the
+            .push() method mutates, or changes, an array.
+            Let’s go over what happened in the example:
+
+            The flowers array that has 3 elements.
+            The function addFlower() has a parameter of arr uses .push() to add a 'lily' element into arr.
+            We call addFlower() with an argument of flowers which will execute the code inside addFlower.
+            We check the value of flowers and it now includes the 'lily' element! The array was mutated!
+
+            So when you pass an array into a function, if the array is mutated inside the function, that change will be
+            maintained outside the function as well. You might also see this concept explained as pass-by-reference
+            since what we’re actually passing the function is a reference to where the variable memory is stored and
+            changing the memory. </p>
+        <h3>Nested Arrays</h3>
+        <p>Earlier we mentioned that arrays can store other arrays. When an array contains another array it is known as
+            a nested array.To access the nested arrays we can use bracket notation with the index value, just like we
+            did to access any other element. Notice that nestedArr[1] will grab the element in index 1 which is the
+            array [2, 3]. Then, if we wanted to access the elements within the nested array we can chain, or add on,
+            more bracket notation with index values.In the second console.log() statement, we have two bracket notations
+            chained to nestedArr. We know that nestedArr[1] is the array [2, 3]. Then to grab the first element from
+            that array, we use nestedArr[1][0] and we get the value of 2.
+        </p>
+        <h3>Final Comments</h3>
+        <p>Nice work! In this lesson, we learned these concepts regarding arrays:
+
+            Arrays are lists that store data in JavaScript.
+            Arrays are created with brackets [].
+            Each item inside of an array is at a numbered position, or index, starting at 0.
+            We can access one item in an array using its index, with syntax like: myArray[0].
+            We can also change an item in an array using its index, with syntax like myArray[0] = 'new string';
+            Arrays have a length property, which allows you to see how many items are in an array.
+            Arrays have their own methods, including .push() and .pop(), which add and remove items from an array,
+            respectively.
+            Arrays have many methods that perform different tasks, such as .slice() and .shift(), you can find
+            documentation at the Mozilla Developer Network website.
+            Some built-in methods are mutating, meaning the method will change the array, while others are not mutating.
+            You can always check the documentation.
+            Variables that contain arrays can be declared with let or const. Even when declared with const, arrays are
+            still mutable. However, a variable declared with const cannot be reassigned.
+            Arrays mutated inside of a function will keep that change even outside the function.
+            Arrays can be nested inside other arrays.
+            To access elements in nested arrays chain indices using bracket notation.
+
+            Learning how to work with and manipulate arrays will help you work with chunks of data!
+        </p>
+        <p>Practice Time!
+            Looking for more ways to practice? Consider trying these:
+
+            Use the .length property to find the last element of an array.
+            Use the other methods in MDN documentation not mentioned in the lesson.
+            Take all the elements in an array and make a string.
+            Find the return value of calling .push() on an array.
+            Nest an array within an array.
+            Access an element in the nested array.
+
+
+        </p>
+        <h2>Loops</h2>
+        <p>A loop is a programming tool that repeats a set of instructions until a specified condition, called a
+            stopping condition is reached. As a programmer, you’ll find that you rely on loops all the time! You’ll hear
+            the generic term iterate when referring to loops; iterate simply means “to repeat”.
+
+            When we need to reuse a task in our code, we often bundle that action in a function. Similarly, when we see
+            that a process has to repeat multiple times in a row, we write a loop. Loops allow us to create efficient
+            code that automates processes to make scalable, manageable programs.
+
+            As illustrated in the diagram, loops iterate or repeat an action until a specific condition is met. When the
+            condition is met, the loop stops and the computer moves on to the next part of the program.
+        </p> <img
+            src='https://s3.amazonaws.com/codecademy-content/courses/learn-javascript-loops/loops_abatraction_v5.svg' />
+        <h3>For Loop</h3>
+        <p>Instead of writing out the same code over and over, loops allow us to tell computers to repeat a given block
+            of code on its own. One way to give computers these instructions is with a for loop.
+
+            The typical for loop includes an iterator variable that usually appears in all three expressions. The
+            iterator variable is initialized, checked against the stopping condition, and assigned a new value on each
+            loop iteration. Iterator variables can have any name, but it’s best practice to use a descriptive variable
+            name.
+
+            A for loop contains three expressions separated by ; inside the parentheses:
+
+            an initialization starts the loop and can also be used to declare the iterator variable.
+            a stopping condition is the condition that the iterator variable is evaluated against— if the condition
+            evaluates to true the code block will run, and if it evaluates to false the code will stop.
+            an iteration statement is used to update the iterator variable on each loop.
+        </p>
+        <h3>Looping in reverse</h3>
+        <p>What if we want the for loop to log 3, 2, 1, and then 0? With simple modifications to the expressions, we can
+            make our loop run backward!
+
+            To run a backward for loop, we must:
+
+            Set the iterator variable to the highest desired value in the initialization expression.
+            Set the stopping condition for when the iterator variable is less than the desired amount.
+            The iterator should decrease in intervals after each iteration.
+
+        </p>
+        <h3>Looping through arrays</h3>
+        <p>for loops are very handy for iterating over data structures. For example, we can use a for loop to perform
+            the same operation on each element on an array. Arrays hold lists of data, like customer names or product
+            information. Imagine we owned a store and wanted to increase the price of every product in our catalog. That
+            could be a lot of repeating code, but by using a for loop to iterate through the array we could accomplish
+            this task easily.
+
+            To loop through each element in an array, a for loop should use the array’s .length property in its
+            condition.
+            n the loop above, we’ve named our iterator variable i. This is a variable naming convention you’ll see in a
+            lot of loops. When we use i to iterate through arrays we can think of it as being short-hand for the word
+            index. Notice how our stopping condition checks that i is less than animals.length. Remember that arrays are
+            zero-indexed, the index of the last element of an array is equivalent to the length of that array minus 1.
+            If we tried to access an element at the index of animals.length we will have gone too far!
+
+            With for loops, it’s easier for us to work with elements in arrays.</p>
+
+        <h3>Nested Loops</h3>
+        <p>When we have a loop running inside another loop, we call that a nested loop. One use for a nested for loop is
+            to compare the elements in two arrays. For each round of the outer for loop, the inner for loop will run
+            completely.
+            Let’s think about what’s happening in the nested loop in our example. For each element in the outer loop
+            array, myArray, the inner loop will run in its entirety comparing the current element from the outer array,
+            myArray[i], to each element in the inner array, yourArray[j]. When it finds a match, it prints a string to
+            the console.
+
+            Now it’s your turn to write a nested loop!
+        </p>
+        <h3>The While Loop</h3>
+        <p>You’re doing great! We’re going to teach you about a different type of loop: the while loop.
+            Let’s break down what’s happening with our while loop syntax:
+
+            The counterTwo variable is declared before the loop. We can access it inside our while loop since it’s in
+            the global scope.
+            We start our loop with the keyword while followed by our stopping condition, or test condition. This will be
+            evaluated before each round of the loop. While the condition evaluates to true, the block will continue to
+            run. Once it evaluates to false the loop will stop.
+            Next, we have our loop’s code block which prints counterTwo to the console and increments counterTwo.
+
+            What would happen if we didn’t increment counterTwo inside our block? If we didn’t include this, counterTwo
+            would always have its initial value, 1. That would mean the testing condition counterTwo lessthan 4 would
+            always evaluate to true and our loop would never stop running! This is called an infinite loop and it’s
+            something we always want to avoid. Infinite loops can take up all of your computer’s processing power
+            potentially freezing your computer. So you may be wondering when to use a while loop! The syntax of a
+            for loop is ideal when we know how many times the loop should run, but we don’t always know this in
+            advance. Think of eating like a while loop: when you start taking bites, you don’t know the exact number
+            you’ll need to become full. Rather you’ll eat while you’re hungry. In situations when we want a loop to
+            execute an undetermined number of times, while loops are the best choice.
+        </p>
+        <h3>Do...While Statements</h3>
+        <p>In some cases, you want a piece of code to run at least once and then loop based on a specific
+            condition after its initial run. This is where the do...while statement comes in.
+
+            A do...while statement says to do a task once and then keep doing it until a specified condition is
+            no longer met. In this example, the code block makes changes to the countString variable by
+            appending the string form of the i variable to it. First, the code block after the do keyword is
+            executed once. Then the condition is evaluated. If the condition evaluates to true, the block will
+            execute again. The looping stops when the condition evaluates to false.
+
+            Note that the while and do...while loop are different! Unlike the while loop, do...while will run at
+            least once whether or not the condition evaluates to true.
+        </p>
+        <h3>The Break Keyword</h3>
+        <p>Imagine we’re looking to adopt a dog. We plan to go to the shelter every day for a year and then give up. But
+            what if we meet our dream dog on day 65? We don’t want to keep going to the shelter for the next 300 days
+            just because our original plan was to go for a whole year. In our code, when we want to stop a loop from
+            continuing to execute even though the original stopping condition we wrote for our loop hasn’t been met, we
+            can use the keyword break.
+
+            The break keyword allows programs to “break” out of the loop from within the loop’s block.
+            break statements can be especially helpful when we’re looping through large data structures! With breaks, we
+            can add test conditions besides the stopping condition, and exit the loop when they’re met.
+        </p>
+        <h3>Summary of Loops</h3>
+        <p>Great job! In this lesson, we learned how to write cleaner code with loops. You now know:
+
+            Loops perform repetitive actions so we don’t have to code that process manually every time.
+            How to write for loops with an iterator variable that increments or decrements
+            How to use a for loop to iterate through an array
+            A nested for loop is a loop inside another loop
+            while loops allow for different types of stopping conditions
+            Stopping conditions are crucial for avoiding infinite loops.
+            do...while loops run code at least once— only checking the stopping condition after the first execution
+            The break keyword allows programs to leave a loop during the execution of its block
+
+        </p>
+
+        <h2>Iterators</h2>
+        <p>We are often unaware of the number of assumptions we make when we communicate with other people in our native
+            languages. If we told you to “count to three,” we would expect you to say or think the numbers one, two and
+            three. We assumed you would know to start with “one” and end with “three”. With programming, we’re faced
+            with needing to be more explicit with our directions to the computer. When we speak to other humans, we
+            share a vocabulary that gives us quick ways to communicate complicated concepts. When we say “bake”, it
+            calls to mind a familiar subroutine— preheating an oven, putting something into an oven for a set amount of
+            time, and finally removing it. This allows us to abstract away a lot of the details and communicate key
+            concepts more concisely. Instead of listing all those details, we can say, “We baked a cake,” and still
+            impart all that meaning to you.
+
+            In programming, we can accomplish “abstraction” by writing functions. In addition to allowing us to reuse
+            our code, functions help to make clear, readable programs. If you encountered countToThree() in a program,
+            you might be able to quickly guess what the function did without having to stop and read the function’s
+            body.
+
+            We’re also going to learn about another way to add a level of abstraction to our programming: higher-order
+            functions. Higher-order functions are functions that accept other functions as arguments and/or return
+            functions as output. This enables us to build abstractions on other abstractions, just like “We hosted a
+            birthday party” is an abstraction that may build on the abstraction “We made a cake.”
+
+            In summary, using more abstraction in our code allows us to write more modular code which is easier to read
+            and debug.
+        </p>
+        <h3>Higher-Order Functions</h3>
+        <p>JavaScript functions behave like any other data type in the language; we can assign functions to variables,
+            and we can reassign them to new variables.
+
+            Below, we have an annoyingly long function name that hurts the readability of any code in which it’s used.
+            Let’s pretend this function does important work and needs to be called repeatedly! What if we wanted to
+            rename this function without sacrificing the source code? We can re-assign the function to a variable with a
+            suitably short name. busy is a variable that holds a reference to our original function. If we could look up
+            the address in memory of busy and the address in memory of announceThatIAmDoingImportantWork they would
+            point to the same place. Our new busy() function can be invoked with parentheses as if that was the name we
+            originally gave our function.
+
+            Notice how we assign announceThatIAmDoingImportantWork without parentheses as the value to the busy
+            variable. We want to assign the value of the function itself, not the value it returns when invoked.
+
+            In JavaScript, functions are first class objects. This means that, like other objects you’ve encountered,
+            JavaScript functions can have properties and methods.
+
+            Since functions are a type of object, they have properties such as .length and .name and methods such as
+            .toString(). You can see more about the methods and properties of functions in the documentation.
+
+            Functions are special because we can invoke them, but we can still treat them like any other type of data.
+            Let’s get some practice doing that!
+        </p>
+        <h3>Functions as Parameters</h3>
+        <p>Since functions can behave like any other type of data in JavaScript, it might not surprise you to learn that
+            we can also pass functions (into other functions) as parameters. A higher-order function is a function that
+            either accepts functions as parameters, returns a function, or both! We call the functions that get passed
+            in as parameters and invoked callback functions because they get called during the execution of the
+            higher-order function.
+
+            When we pass a function in as an argument to another function, we don’t invoke it. Invoking the function
+            would evaluate to the return value of that function call. With callbacks, we pass in the function itself by
+            typing the function name without the parentheses (that would evaluate to the result of calling the
+            function).We wrote a higher-order function, timeFuncRuntime(). It takes in a function as an argument, saves
+            a starting time, invokes the callback function, records the time after the function was called, and returns
+            the time the function took to run by subtracting the starting time from the ending time.
+
+            This higher-order function could be used with any callback function which makes it a potentially powerful
+            piece of code.
+
+            We then invoked timeFuncRuntime() first with the addOneToOne() function - note how we passed in addOneToOne
+            and did not invoke it. In this example, we invoked timeFuncRuntime() with an anonymous function that counts
+            backwards from 10. Anonymous functions can be arguments too!
+        </p>
+        <h3>Summary of Higher-Order Functions</h3>
+        <p>Great job! By thinking about functions as data and learning about higher-order functions, you’ve taken
+            important steps in being able to write clean, modular code and take advantage of JavaScript’s flexibility.
+
+            Let’s review what we learned in this lesson:
+
+            Abstraction allows us to write complicated code in a way that’s easy to reuse, debug, and understand for
+            human readers
+
+            We can work with functions the same way we would any other type of data including reassigning them to new
+            variables
+
+            JavaScript functions are first-class objects, so they have properties and methods like any object
+
+            Functions can be passed into other functions as parameters
+
+            A higher-order function is a function that either accepts functions as parameters, returns a function, or
+            both
+
+        </p>
+        <h3>Iterators</h3>
+        <p>Imagine you had a grocery list and you wanted to know what each item on the list was. You’d have to scan
+            through each row and check for the item. This common task is similar to what we have to do when we want to
+            iterate over, or loop through, an array. One tool at our disposal is the for loop. However, we also have
+            access to built-in array methods which make looping easier.
+
+            The built-in JavaScript array methods that help us iterate are called iteration methods, at times referred
+            to as iterators. Iterators are methods called on arrays to manipulate elements and return values.
+
+            In this lesson, you will learn the syntax for these methods, their return values, how to use the
+            documentation to understand them, and how to choose the right iterator method for a given task.
+
+            In other words, we don't just for loop, we also can use other built-in array methods. YAY!
+            
+
+        </p>
+        <h3></h3>
+        <p></p>
+    </div>
+
+    <footer style="height:7rem">
+        <div class="row1">
+            <ul class="col-sm-2">
+                <li class="col-sm-3">
+                    <a href="https://github.com/knuys">
+                        <img style="height: 3rem" src="https://image.flaticon.com/icons/svg/25/25231.svg">
+                    </a>
+                </li>
+                <li class="col-sm-3">
+                    <a href="https://www.codecademy.com/learn/make-a-website">
+                        <img style="height:3rem;"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Codecademy.svg/570px-Codecademy.svg.png">
+                    </a>
+                </li>
+            </ul>
+            <p style="text-align:right; color: whitesmoke; display: float; font-size:1.2em" class="col-sm-10">&copy; Bae
+                Practise Blog
+            </p>
+    </footer>

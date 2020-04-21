@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+    <title>Learning With CodeAcademy</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+
+    <header style="height:10rem">
+        <div class="row1">
+            <h1
+                style="text-align: left; float: left; color: whitesmoke; margin: .65em 0em 0em 1.6em; font-family:'Courier New', Courier, monospace; font-weight: bolder; font-size: 2.5em;">
+                My Code Diary</h1>
+            <div class="col-sm-15 text-right">
+                <p style="color: whitesmoke; font-weight: bold;">newest</p>
+                <p style="color: whitesmoke; font-weight: bold;">catalogue</p>
+            </div>
+        </div>
+    </header>
+
+    <style>
+        .orange-text {
+            color: orange;
+        }
+
+        .grey-rounded-border {
+            border: lightgray 15px solid;
+            border-radius: 50%;
+        }
+
+        .nav-bg {
+            background-color: lightgray;
+        }
+    </style>
+
+    <div class="everything">
+        <h1>Free Code Camp: Responsive Web Design</h1>
+        <div class="nav-bg">
+            <a href="#HTML-section">Basic HTML and HTML5</a>
+            <a href="#CSS-section">Basic CSS</a>
+            <a href="#AVD-section">Applied Visual Design</a>
+            <a href="#Accessibility-section">Applied Accessibility</a>
+            <a href="#ResponsivePrinciples-section">Responsive Web Design Principles</a>
+            <a href="#Flexbox-section">CSS Flexbox</a>
+            <a href="#CSSGrid-section">CSS Grid</a>
+            <a href="#Projects-section">Responsive Web Design Projects</a>
+        </div>
+        <h2 id="HTML-section">Basic HTML 5</h2>
+        <h3>New Elements and Attributes</h3>
+        <p>While I am revisiting old concepts which may be viewed on my <a href="./index.html">Codecademy: Make A
+                Website</a> page, I am also
+            introduced to a few new HTML elements, attributes and types. These include:
+            <ul>
+                <li>Anchors - element; finally I can create internal links to different sections of my webpage which can
+                    be
+                    observed on this page. To do this, I created an anchor using the 'a' element, which the 'href' then
+                    takes a # with an 'id' attribute which is assigned to an element I wish to link to. You can also
+                    create 'dead links' using just the # symbol, this is useful when modifying the link in Javascript,
+                    or as a placeholder if the link is yet unknown. You can also use dead links to turn an image into a
+                    clickable link, by nesting the image in the dead anchor.
+                </li>
+                <li>target="_blank" - this attribute/value coupling can be used to open links in a fresh tab.</li>
+                <li>input - a self-closing element that allows me to get input from a user. I can select a type of input
+                    accepted by it aswell such as text</li>
+                <li>Placeholder - attribute; placeholder text is what sits in the input box before the user has put
+                    anything in.</li>
+                <li>Form - element; allows you to build webform and submit input data to a server. To do so, use the
+                    'action' attribute.</li>
+                <li>Button - self-explanatory element; this also takes a 'type' and text.</li>
+                <li>Required - attribute; can be given to 'input' so inputs are...well..required to progress in a form
+                    for example.</li>
+                <li>Label - element; nesting elements within it, will associate them with the label element and can lead
+                    to cool things like clickable associated text for radio buttons. In this case, it is always good
+                    practice to give your labels a 'for' attribute whose label matches with the input 'id' attribute.
+                    Each label in a set should share the same 'name' attribute value in the input element to create a
+                    radio group.</li>
+                <li>Radio buttons - 'type' value of 'input'. Basically multiple-choice buttons. Below I included ones
+                    with and without 'label'.</li>
+                <li>Checkboxes - a type of input. It is best practice to match your label 'for' and input 'id' values.
+                </li>
+            </ul>
+        </p>
+        <!--Make own box example for margins, padding and borders relative to 2 html elements, show that setting a negative margin makes the element larger-->
+        <p>We also touch on creating ordered and unordered lists, which I love using. The example on Free Code Camp was
+            to create lists on what cats love and hate. I decided to use my favourite image of a cat displaying the
+            'hatred' emotion state to utilise the 'dead linking' I mentioned earlier.</p>
+        <a href="#"><img class="grey-rounded-border" style="display:block; margin:auto; width:400px;"
+                src="https://pbs.twimg.com/media/DVQVXSFVMAU8YO-?format=jpg&name=medium" alt="he no like banana" /></a>
+
+        <form action="/submit-favourite-meme">
+            <input style="width:400px; margin-top: 2rem;" type="text" placeholder="What is your favourite meme?"
+                required />
+            <button type="submit">Fire Away!</button>
+        </form>
+        <form action="/submit-favourite-meme">
+            <label for="Hourly">
+                <input id="Hourly" type="radio" name="meme-access" checked> Hourly</input>
+            </label>
+            <label for="Daily">
+                <input id="Daily" type="radio" name="meme-access"> Daily</input>
+            </label>
+            <label for="Weekly">
+                <input id="Weekly" type="radio" name="meme-access"> Weekly</input>
+            </label>
+
+            <input type="radio" name="meme-access"> Fortnightly or more</input>
+        </form>
+        <form action="/submit-favourite-meme">
+            <label for="Happy">
+                <input id="Happy" type="checkbox" name="meme-emotion" value="Happy" checked> Happy</input>
+            </label>
+            <label for="Sad">
+                <input id="Sad" type="checkbox" name="meme-emotion" value="Sad"> Sad</input>
+            </label>
+            <label for="Calm">
+                <input id="Calm" type="checkbox" name="meme-emotion" value="Calm"> Calm</input>
+            </label>
+            <label for="Disappointment">
+                <input id="Disappointment" type="checkbox" name="meme-emotion" value="Disappointment">
+                Disappointment</input>
+            </label>
+        </form>
+        <h2 id="CSS-section" class="orange-text">Basic CSS</h2>
+        <p>Again, a lot of this is a refresh of old concepts such as setting fonts, changing colours, padding and
+            margins, however there are a few new tricks as well. Here are some new attributes and selectors:
+            <ul>
+
+                <li>font-family - to specify/call the font you want. You can import font by linking to them above your
+                    style block. Be sure to remember to declare 'rel' and 'type'. Family names should be in "" if they
+                    have spaces</li>
+                <li>Class - attribute; we used it before, but we can pile on classes just by using a space in the
+                    declaration!</li>
+                <li>Attribute Selectors - using this to style elements by using [attribute="value"] as a selector. I did
+                    this with my radio buttons to give them a margin.</li>
+                <li>border-radius - to create rounded border edges. Giving it a border radius of 50% will create a round
+                    image. I used this for banana cat.</li>
+                <li>Background-color - used this for my nav section!</li>
+                <li>'Value' - attribute; because checkboxes and radio report their values from the 'value' attribute, we
+                    should define what it is when the corresponding boxes/buttons are selected. The default would be
+                    'on' (used when no value attribute has been assigned), however this won't be useful if we have a
+                    long list of buttons as this would appear as 'input-name: on', rather than the id or text the user
+                    had selected.</li>
+                <li>Checked - attribute; you can use this to 'check' (fill in) by default a radio or checkbox button.
+                    I've used this on a couple buttons below - I don't generally like them for surveys, but I'm
+                    implementing it below anyway. It has a good use case for things like pre-input/saved user data.</li>
+                <li>id - attribute; it's considered best practice to give elements unique id's. They are useful for
+                    selecting and modifying specific elements using Javascript. I did this for my short meme survey. We
+                    reference id using # rather than a dot operator like classes</li>
+            </ul>
+        </p>
+
+        <h3>Formatting and Overrides</h3>
+        <p>
+            There was also some general information on formatting and style overrides:
+            <ul>
+                <li>CSS class declaration in HTML - so I don't think I did this before in my previous workshop, however
+                    this is pretty neat. Basically I can create a CSS class and use it in a style block to modify HTML
+                    elements. I did this to create an orange heading for this segment.</li>
+                <li>Clockwise-notation - I have been doing this almost religiously so I don't have to specify -top,
+                    -right, -bottom, -left for margins, borders and well, anything really, by inputting all of my values
+                    into a single, say, 'padding' with the values corresponding to the directions going clockwise from
+                    top to left. </li>
+                <li>Declaration override - If you have competing styles in your class, the second declaration will
+                    always take precedence over the first. 'id' attribute, then inline styling will override everything
+                    competing with it.</li>
+                <li>!important- Makes sure that the specific style is applied and not overridden by other styles for
+                    example. I had to use this for my radio button's margins because Bootstrap was interfering.</li>
+                <li>Short Hex Codes - It's a thing. Instead of writing #FF0000 for red, you could just write #F00...or
+                    red for that matter.</li>
+            </ul>
+        </p>
+        <h3>Variables and Root</h3>
+        <h4>Variables</h4>
+        <p>Variables in CSS are denoted using '--' before the variable name. This would allow you to change
+            multiple style properties at once. You can reference your variable using 'var(--variable-name)' as a value
+            to a property. You may also assign a <i>Fallback value</i>.This will be displayed if the desired value or
+            variable could not be found. Good for debugging or compatibility. This can look like:
+            <ul>
+                <li>background:var(--variable-name, fallback);</li>
+                <li>or simply background:red; if placed the line above the variable.</li>
+            </ul>
+        </p>
+        <h4>Root</h4>
+        <!--reword-->
+        <p>
+            When you create a variable, it is available for you to use inside the selector in which you create it.
+            It also is available in any of that selector's descendants. This happens because CSS variables are
+            inherited, just like ordinary properties.
+
+            To make use of inheritance, CSS variables are often defined in the :root element.
+
+            :root is a pseudo-class selector that matches the root element of the document, usually the html
+            element. By creating your variables in :root, they will be available globally and can be accessed from
+            any other selector in the style sheet.
+
+            Define a variable named --penguin-belly in the :root selector and give it the value of pink. You can then
+            see that the variable is inherited and that all the child elements which use it get pink backgrounds.
+
+            When you create your variables in :root they will set the value of that variable for the whole page.
+
+            You can then over-write these variables by setting them again within a specific element.
+        </p>
+        <h3>Media Queries</h3>
+        <!--reword and do it with Root-->
+        <p>
+
+            CSS Variables can simplify the way you use media queries.
+
+            For instance, when your screen is smaller or larger than your media query break point, you can change the
+            value of a variable, and it will apply its style wherever it is used.
+
+            In the :root selector of the media query, change it so --penguin-size is redefined and given a value of
+            200px. Also, redefine --penguin-skin and give it a value of black. Then resize the preview to see this
+            change in action.
+        </p>
+        <h2 id="AVD-section">Applied Visual Design</h2>
+        <p>This is all about ~design~. It begins with touching base on aligning elements, which I have experience with
+            doing, however I thought I may as well write a little about them as I often do get a little confused by the
+            different aligns.</p>
+        <h3>Align</h3>
+        <p>Basically where the element sits on the page. There are a number of align values for text elements using
+            text-align. I'm messing around with aligns in the card below:
+            <ul>
+                <li>justify - Makes sure all lines of text hit the left and right of page except the last line. Makes
+                    text look neat.</li>
+                <li>center - Middle of page.</li>
+                <li>right/left - Self-explanatory.</li>
+        </p>
+        </ul>
+        <div class="wholeCard">
+            <div class="cardContent">
+                <h3>Animal Crossing</h3>
+                <hr>
+                <div class="cardText">
+                    <p>Enjoy fun times with your pals in your own deserted island. Catch fish and bugs, collect
+                        seashells, and gather fruit. Shake trees for branches and hidden goodies, however, be wary
+                        of wasps! They will sting!</p>
+                </div>
+                <div class="cardImage">
+                    <img src="https://nintendoeverything.com/wp-content/uploads/poster-1-1-656x425.jpg" />
+                </div>
+                <a href="https://www.youtube.com/watch?v=dy6D3QYnhSk">Animal Crossing theme song</a>
+            </div>
+        </div>
+        <p>We are also learning about new tags which apply CSS when used in HTML. These include:
+            <ul>
+                <li>Strong - using this in your HTML will apply the CSS font-style: bold; to whatever it is wrapped
+                    around</li>
+                <li>U - underlines what it is wrapped around, applying the CSS text-decoration: underline;</li>
+                <li>Em - font-style: italics</li>
+                <li>S - text-decoration: line-through</li>
+                <li>hr - self-closing; adds a horizontal line to separate elements in HTML4, but in HTML5 it's more like
+                    a break</li>
+            </ul>
+        </p>
+        <p>A few other things like adding a to rgb --> as in rgba() will allow us to adjust the colour opacity.</p>
+        <h3>Box Shadows</h3>
+        <p>These add nifty little shadows to an element. Multiple box shadows can be created by using commas to separate
+            properties of each box shadow element.This property takes the following values in this order:
+            <ul>
+                <li>offset-x - how far to push the shadow horizontally from the element</li>
+                <li>offset-y - how far to push the shadow vertically from the element</li>
+                <li>blur-radius - optional; how blurry the shadow is with 0 = sharp and higher numbers or percentages
+                    increase the amount of blur</li>
+                <li>spread-radius - optional; size of the shadow. The default is 0 in which the spread-radius is equal
+                    to the blur size</li>
+                <li>color - shadow color</li>
+            </ul>
+        </p>
+        <h3>Even More Properties</h3>
+        <ul>
+            <li>Opacity - This sets the opacity of items. Takes a value of 0-1</li>
+            <li>text-transform - Turns case into whatever the value is such as lowercase, uppercase, capitalise, initial
+                (default value), inherit (parent value) and none (original text).</li>
+            <li>font-weight - Sets how thicc characters are</li>
+            <li>line-height - Sets the line height between lines</li>
+        </ul>
+
+        <h3>Pseudo-classes</h3>
+        <p>Pseudo-classes are keywords that can be added to selectors to select for a specific state of the element.
+            Pseudo-classes can include:
+            <ul>
+                <li>hover - this selects for what happens to the element if the mouse is hovering over it. You can
+                    observe this in the Animal Crossing card where the link hover is red.</li>
+            </ul>
+        </p>
+        <h3>Position</h3>
+        <p> We can use this to override the CSS box-model and place items where we would like them. We will be looking
+            at the following 4 items:
+            <ul>
+                <li>Relative - this allows placement of elements in a spot relative to the normal flow in the box model.
+                    This uses the CSS offset properties
+                    of left or right, and top or bottom to say how far away from the normal position the element will
+                    now be.</li>
+                <li>Absolute - this locks an element into a position relative to the parent container. This takes the
+                    element out of the normal flow of the document making surrounding items ignore it. Basically, it's
+                    out here doing its own thing and everyone else is none the wiser. The CSS offset properties are used
+                    to adjust the position.</li>
+                <p style="background-color: lemonchiffon; font-style: italic; margin:1em">Be careful! Absolute
+                    positioning can be problematic. If you don't add a position rule to your parent,
+                    your browser will look 'up the chain' to prescribe your 'absolute'. It could result in defaulting to
+                    the body tag to receive that info.</p>
+                <li>Fixed - a type of absolute position. This locks an element into place relative to the browser window
+                    and takes CSS offset properties. Fixed allows you to have something stay in the same position even
+                    when you scroll. However, be careful with styling - as it is removed from the normal flow of the
+                    document, it can disrupt the aesthetics of the page resulting in the need for layout
+                    adjustments/accommodations. It doesn't occupy a 'space' per se and just hangs around on a spot on
+                    the viewport - like a fly on your screen.</li>
+                <li>Sticky - a type of relative position similar to fixed. However, it does occupy a space in a
+                    container, and acts similar to fixed once it is scrolled past. You can observe this below in my
+                    triptych of my favourite animal crossing friends.
+                    <br>I made a small guide on how I did my triptych <a href="#">here</a>.</li>
+            </ul>
+        </p>
+        <img id ="bgAC" src="https://i.pinimg.com/originals/ef/cb/e7/efcbe71e2a0258f9a98dc5556e2ecad8.jpg" alt="animal crossing misc background">
+        <div class="favFriends" id="animalTriptych">
+           
+            <img id="filbertImg"
+                src="https://vignette.wikia.nocookie.net/animalcrossing/images/8/81/Filbert_NH.png/revision/latest/top-crop/width/360/height/450?cb=20200309020807"
+                alt="Filbert">
+            <img id="goldieImg"
+                src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/animal-crossing-new-horizons/4/4d/Goldie_NewLeaf.png?width=325"
+                alt="Goldie">
+            <img id="dottyImg"
+                src="https://vignette.wikia.nocookie.net/animalcrossing/images/c/cc/Dotty_NH.png/revision/latest?cb=20200321142147"
+                alt="Dotty">
+        </div>
+         <!--
+        <div class="boxPosition">
+            <div class="zindexBox" id="zindexInfo">
+                <p>Due to the customisability of position types, we can have overlapping elements where later HTML
+                    elements
+                    appear on top of earlier ones.
+            </div>
+            <div class="zindexExample">
+                <p>This box is underneath because of a thing called z-index.</p>
+            </div>
+        </div> 
+    -->
+
+        <p>As mentioned earlier, we may, for aesthetic or functional reasons, want to make
+            adjustments to our layout to prevent or reduce overlap. z-index
+            allows us to specify the order of how our elements are stacked. This property takes an integer whereby
+            elements with higher values will appear at the top than those with lower values.</p>
+        <div class="wholeCard" id="positionQuote">
+            <div class="cardText">
+                <p>"Positioning gives you a lot of flexibility and power over the visual layout of a page. It's good
+                    to remember that no matter the position of elements, the underlying HTML markup should be
+                    organized and make sense when read from top to bottom. This is how users with visual impairments
+                    (who rely on assistive devices like screen readers) access your content."</p>
+                <h5>- Free Code Camp, 2020</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <footer style="height:7rem">
+        <div class="row1">
+            <ul class="col-sm-2">
+                <li class="col-sm-3">
+                    <a href="https://github.com/knuys">
+                        <img style="height: 3rem" src="https://image.flaticon.com/icons/svg/25/25231.svg">
+                    </a>
+                </li>
+                <li class="col-sm-3">
+                    <a href="https://www.codecademy.com/learn/make-a-website">
+                        <img style="height:3rem;"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Codecademy.svg/570px-Codecademy.svg.png">
+                    </a>
+                </li>
+            </ul>
+            <p style="text-align:right; color: whitesmoke; display: float; font-size:1.2em" class="col-sm-10">&copy;
+                Bae
+                Practise Blog
+            </p>
+    </footer>

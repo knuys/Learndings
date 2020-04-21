@@ -31,8 +31,9 @@ body {
 
   h4 {
       color: darkseagreen;
-      margin-left: 100px;
+      margin-left: 5px;
       font-family: Arial, sans-serif;
+      font-size: larger;
   }
 
   h5 {
@@ -78,7 +79,7 @@ body {
   .food img {
       padding: 0 2em 2em;
       max-width: 450px;
-
+      
   }
 
   .button {
@@ -157,3 +158,126 @@ footer .col-sm-3 {
     padding-right: 50px;
     
 }
+
+.images img {
+    display: block;
+    margin: auto;
+}
+
+[type="radio"] {
+    margin: 20px 0px 20px 0px !important;   
+}
+
+/* Card */
+
+.wholeCard {
+    width: 450px;
+    border: thick dotted darkseagreen;
+    border-radius: 0px;
+    margin: 10px;
+    padding: 5px;
+    display: block;
+    margin: auto;
+}
+
+.cardContent {
+    padding: 1em;
+    text-align: center;
+    background-color: lemonchiffon;
+}
+
+.cardContent h3 {
+    margin-left: 0px !important;
+    
+}
+
+.cardText {
+    font-style: italic;
+    text-align: justify;
+}
+
+.cardText h5 {
+    position: relative;
+    left: 9em;
+    top: -10px;
+}
+.cardImage img {
+    width: 350px;
+}
+
+#infoBox {
+    box-shadow: 0px 3px 3px 3px rgba(0,0,0,0.2), 5px 5px 5px 5px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+.cardContent a:hover {
+    color: red;
+}
+/*ANC Friends*/
+
+#bgAC {
+    margin-top: -20px;
+    z-index: 1;
+    opacity: 50%;
+    position: absolute;
+    clip: rect(0 900px 290px 0);
+}
+
+.favFriends {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.favFriends img {
+    display: inline;
+    object-fit: cover;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border: lightgray 15px solid;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+}
+#goldieImg {
+    object-position: 0 -40%;
+    z-index: 2;
+}
+#filbertImg {
+    object-position: 1.4em 3.5em;
+    z-index: 2;
+}
+
+#dottyImg {
+    object-position: 50% 0;
+    z-index: 2;
+}
+
+#positionQuote{
+    margin-top: 1em;
+}
+
+/*Boxes
+
+.boxPosition {
+    
+}
+.zindexBox {
+    background-color: lemonchiffon;
+    border: thick dotted darkseagreen;
+    width: 300px;
+    display: block;
+    z-index:2;
+    left: 40%;
+}
+
+.zindexExample {
+    background-color: lightcyan;
+    border: thick dotted darkseagreen;
+    width: 400px;
+    display: block;
+    margin-top: -10em;
+    z-index: 1;
+    left: 60%;
+}*/
+
