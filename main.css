@@ -164,14 +164,10 @@ footer .col-sm-3 {
     margin: auto;
 }
 
-[type="radio"] {
-    margin: 20px 0px 20px 0px !important;   
-}
-
 /* Card */
 
 .wholeCard {
-    width: 450px;
+    width: 500px;
     border: thick dotted darkseagreen;
     border-radius: 0px;
     margin: 10px;
@@ -213,71 +209,3 @@ footer .col-sm-3 {
 .cardContent a:hover {
     color: red;
 }
-/*ANC Friends*/
-
-#bgAC {
-    margin-top: -20px;
-    z-index: 1;
-    opacity: 50%;
-    position: absolute;
-    clip: rect(0 900px 290px 0);
-}
-
-.favFriends {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.favFriends img {
-    display: inline;
-    object-fit: cover;
-    margin: auto;
-    width: 250px;
-    height: 250px;
-    border: lightgray 15px solid;
-    border-radius: 50%;
-    background-color: white;
-    z-index: 2;
-}
-#goldieImg {
-    object-position: 0 -40%;
-    z-index: 2;
-}
-#filbertImg {
-    object-position: 1.4em 3.5em;
-    z-index: 2;
-}
-
-#dottyImg {
-    object-position: 50% 0;
-    z-index: 2;
-}
-
-#positionQuote{
-    margin-top: 1em;
-}
-
-/*Boxes
-
-.boxPosition {
-    
-}
-.zindexBox {
-    background-color: lemonchiffon;
-    border: thick dotted darkseagreen;
-    width: 300px;
-    display: block;
-    z-index:2;
-    left: 40%;
-}
-
-.zindexExample {
-    background-color: lightcyan;
-    border: thick dotted darkseagreen;
-    width: 400px;
-    display: block;
-    margin-top: -10em;
-    z-index: 1;
-    left: 60%;
-}*/
-

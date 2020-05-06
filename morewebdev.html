@@ -4,9 +4,9 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 
-    <title>Learning With CodeAcademy</title>
+    <title>Code With Me</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="morewebdev.css">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
 
     <div class="everything">
         <h1>Free Code Camp: Responsive Web Design</h1>
-        <div class="nav-bg">
+        <nav class="nav-bg">
             <a href="#HTML-section">Basic HTML and HTML5</a>
             <a href="#CSS-section">Basic CSS</a>
             <a href="#AVD-section">Applied Visual Design</a>
@@ -49,7 +49,7 @@
             <a href="#Flexbox-section">CSS Flexbox</a>
             <a href="#CSSGrid-section">CSS Grid</a>
             <a href="#Projects-section">Responsive Web Design Projects</a>
-        </div>
+        </nav>
         <h2 id="HTML-section">Basic HTML 5</h2>
         <h3>New Elements and Attributes</h3>
         <p>While I am revisiting old concepts which may be viewed on my <a href="./index.html">Codecademy: Make A
@@ -89,42 +89,52 @@
         <p>We also touch on creating ordered and unordered lists, which I love using. The example on Free Code Camp was
             to create lists on what cats love and hate. I decided to use my favourite image of a cat displaying the
             'hatred' emotion state to utilise the 'dead linking' I mentioned earlier.</p>
-        <a href="#"><img class="grey-rounded-border" style="display:block; margin:auto; width:400px;"
-                src="https://pbs.twimg.com/media/DVQVXSFVMAU8YO-?format=jpg&name=medium" alt="he no like banana" /></a>
 
-        <form action="/submit-favourite-meme">
-            <input style="width:400px; margin-top: 2rem;" type="text" placeholder="What is your favourite meme?"
-                required />
-            <button type="submit">Fire Away!</button>
-        </form>
-        <form action="/submit-favourite-meme">
-            <label for="Hourly">
-                <input id="Hourly" type="radio" name="meme-access" checked> Hourly</input>
-            </label>
-            <label for="Daily">
-                <input id="Daily" type="radio" name="meme-access"> Daily</input>
-            </label>
-            <label for="Weekly">
-                <input id="Weekly" type="radio" name="meme-access"> Weekly</input>
-            </label>
+        <div class="wholeCard">
+            <div class="surveyText">
+                <h2>Meme Survey</h2>
+                <a href="#"><img class="grey-rounded-border" style="display:block; margin:auto; width:300px;"
+                        src="https://pbs.twimg.com/media/DVQVXSFVMAU8YO-?format=jpg&name=medium"
+                        alt="he no like banana" /></a>
+                <h4>What is your favourite meme?</h4>
+                <form action="/submit-favourite-meme">
+                    <input style="width:300px" type="text" placeholder="Type your answer here" required />
+                    <button type="submit">Fire Away!</button>
+                </form>
 
-            <input type="radio" name="meme-access"> Fortnightly or more</input>
-        </form>
-        <form action="/submit-favourite-meme">
-            <label for="Happy">
-                <input id="Happy" type="checkbox" name="meme-emotion" value="Happy" checked> Happy</input>
-            </label>
-            <label for="Sad">
-                <input id="Sad" type="checkbox" name="meme-emotion" value="Sad"> Sad</input>
-            </label>
-            <label for="Calm">
-                <input id="Calm" type="checkbox" name="meme-emotion" value="Calm"> Calm</input>
-            </label>
-            <label for="Disappointment">
-                <input id="Disappointment" type="checkbox" name="meme-emotion" value="Disappointment">
-                Disappointment</input>
-            </label>
-        </form>
+                <form action="/submit-favourite-meme">
+                    <h4>How often do you view memes on your device?</h4>
+                    <label for="Hourly">
+                        <input id="Hourly" type="radio" name="meme-access" checked> Hourly</input>
+                    </label>
+                    <label for="Daily">
+                        <input id="Daily" type="radio" name="meme-access"> Daily</input>
+                    </label>
+                    <label for="Weekly">
+                        <input id="Weekly" type="radio" name="meme-access"> Weekly</input>
+                    </label>
+
+                    <input type="radio" name="meme-access"> Fortnightly or more</input>
+                </form>
+
+                <form action="/submit-favourite-meme">
+                    <h4>How do memes make you feel?</h4>
+                    <label for="Happy">
+                        <input id="Happy" type="checkbox" name="meme-emotion" value="Happy" checked> Happy</input>
+                    </label>
+                    <label for="Sad">
+                        <input id="Sad" type="checkbox" name="meme-emotion" value="Sad"> Sad</input>
+                    </label>
+                    <label for="Calm">
+                        <input id="Calm" type="checkbox" name="meme-emotion" value="Calm"> Calm</input>
+                    </label>
+                    <label for="Disappointment">
+                        <input id="Disappointment" type="checkbox" name="meme-emotion" value="Disappointment">
+                        Disappointed</input>
+                    </label>
+                </form>
+            </div>
+        </div>
         <h2 id="CSS-section" class="orange-text">Basic CSS</h2>
         <p>Again, a lot of this is a refresh of old concepts such as setting fonts, changing colours, padding and
             margins, however there are a few new tricks as well. Here are some new attributes and selectors:
@@ -312,25 +322,28 @@
                     adjustments/accommodations. It doesn't occupy a 'space' per se and just hangs around on a spot on
                     the viewport - like a fly on your screen.</li>
                 <li>Sticky - a type of relative position similar to fixed. However, it does occupy a space in a
-                    container, and acts similar to fixed once it is scrolled past. You can observe this below in my
+                    container, and acts similar to fixed once it is scrolled past a defined position for it. You can
+                    observe this below in my
                     triptych of my favourite animal crossing friends.
                     <br>I made a small guide on how I did my triptych <a href="#">here</a>.</li>
             </ul>
         </p>
-        <img id ="bgAC" src="https://i.pinimg.com/originals/ef/cb/e7/efcbe71e2a0258f9a98dc5556e2ecad8.jpg" alt="animal crossing misc background">
-        <div class="favFriends" id="animalTriptych">
-           
-            <img id="filbertImg"
-                src="https://vignette.wikia.nocookie.net/animalcrossing/images/8/81/Filbert_NH.png/revision/latest/top-crop/width/360/height/450?cb=20200309020807"
-                alt="Filbert">
-            <img id="goldieImg"
-                src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/animal-crossing-new-horizons/4/4d/Goldie_NewLeaf.png?width=325"
-                alt="Goldie">
-            <img id="dottyImg"
-                src="https://vignette.wikia.nocookie.net/animalcrossing/images/c/cc/Dotty_NH.png/revision/latest?cb=20200321142147"
-                alt="Dotty">
-        </div>
-         <!--
+        <div class="friendsSticky">
+            <div class="favFriends" id="animalTriptych">
+                <img id="filbertImg"
+                    src="https://vignette.wikia.nocookie.net/animalcrossing/images/8/81/Filbert_NH.png/revision/latest/top-crop/width/360/height/450?cb=20200309020807"
+                    alt="Filbert">
+                <img id="goldieImg"
+                    src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/animal-crossing-new-horizons/4/4d/Goldie_NewLeaf.png?width=325"
+                    alt="Goldie">
+                <img id="dottyImg"
+                    src="https://vignette.wikia.nocookie.net/animalcrossing/images/c/cc/Dotty_NH.png/revision/latest?cb=20200321142147"
+                    alt="Dotty">
+            </div>
+
+
+
+            <!--
         <div class="boxPosition">
             <div class="zindexBox" id="zindexInfo">
                 <p>Due to the customisability of position types, we can have overlapping elements where later HTML
@@ -343,10 +356,16 @@
         </div> 
     -->
 
-        <p>As mentioned earlier, we may, for aesthetic or functional reasons, want to make
-            adjustments to our layout to prevent or reduce overlap. z-index
-            allows us to specify the order of how our elements are stacked. This property takes an integer whereby
-            elements with higher values will appear at the top than those with lower values.</p>
+            <p>As mentioned earlier, we may, for aesthetic or functional reasons, want to make
+                adjustments to our layout to prevent or reduce overlap. z-index
+                allows us to specify the order of how our elements are stacked. This property takes an integer whereby
+                elements with higher values will appear at the top than those with lower values. I hit a huge road-block
+                just
+                trying to get z-index to work in the flow of my doc, but it was a real pain. I'll get back to using
+                z-index
+                in
+                the future with a more dedicated lesson.</p>
+        </div>
         <div class="wholeCard" id="positionQuote">
             <div class="cardText">
                 <p>"Positioning gives you a lot of flexibility and power over the visual layout of a page. It's good
@@ -356,6 +375,608 @@
                 <h5>- Free Code Camp, 2020</h5>
             </div>
         </div>
+
+        <h2>Colour Theory</h2>
+        <p>I have a background in art and am an avid painter. So colour theory is something I have a lot of experience
+            with, but it doesn't mean it is easier for me. I can spend hours just choosing the right colours most times,
+            but the pay off is significant. For a thesis project - having the appropriate colours for my presentation
+            not only helped to explain my project, but also improved the professional look of my poster. It helped to
+            significantly increase engagement with my project relative to my peers. All this is telling you is that
+            colour and design really matters!</p>
+        <p>A good grasp of colour theory will really help your projects pop. So far, I've gone
+            for very neutral colours that have stayed within the same colour family as this is a journal. However,
+            there may be some instances where I would need to really play with colour theory to evoke different
+            emotions,make elements eye-catching and influence the overall general feel of my project. In keeping within
+            the same colour family, I've helped my journal look clean, unfussy and organised, but it's not going to help
+            me win any prizes.
+
+            Useful tools include the colour-wheel, checking out Pantone layouts and drawing inspiration from
+            source material related to your project. But let's first talk about the colour wheel.
+            <img style="display: block; margin: auto;"
+                src="https://st.depositphotos.com/1012407/2179/v/450/depositphotos_21796649-stock-illustration-color-wheel.jpg">
+            <ul>
+                <li>Colours on the opposite sides of the wheel are complementary. These are great for creating high
+                    contrast and making elements stand-out from each other. Artist Takashi Murakami uses complementary
+                    colours a lot in his art to make his works vibrant. Mixing complementary colours will create a gray.
+                </li>
+                <li>Neighbouring colours are different hues from a similar source - you can think of these colours as
+                    belonging to the same family. For example the colours to the left and right of red are shades of red
+                    with more yellow (clockwise) and more magenta/blue (anti-clockwise) pigment. Using these colours
+                    together ensures harmony as you are selecting colours within the same family.</li>
+                <li>Adding varying levels of white to a colour produces lighter tints of the same colour.</li>
+                <li>Adding varying levels to a colour produces darker shades of the same colour.</li>
+                <li>Adding warm tones (red/yellow/orange) to a colour will create a warmer toned version of the colour.
+                </li>
+                <li>Adding cool tones (magenta/blue/green) to a colour will create a cooler toned version of the colour.
+                </li>
+            </ul>
+            Modern colour theory follows the additive RGB model which is used in digital devices, and the subtractive
+            CMY(K) model which is predominantly used in printing. To help you with choosing colours, you can use a
+            colour picking tool. The example below examines the basic principles of colour theory using red.
+
+            <div class="boxColour">
+                <section class="container">
+                    <div class="row">
+                        <figure class="col-sm-5">
+                            <p>Complementary</p>
+                            <div class="boxRed"></div>
+                            <div class="boxBlue"></div>
+                        </figure>
+                        <figure class="col-sm-1">
+                        </figure>
+                        <figure class="col-sm-5">
+                            <p>Family</p>
+                            <div class="boxMagenta"></div>
+                            <div class="boxRed"></div>
+                            <div class="boxOrange"></div>
+                        </figure>
+                        <figure class="col-sm-5">
+                            <p>Shade</p>
+                            <div class="boxPink"></div>
+                            <div class="boxRed"></div>
+                            <div class="boxWine"></div>
+                        </figure>
+                        <figure class="col-sm-1">
+                        </figure>
+                        <figure class="col-sm-5">
+                            <p>Tone</p>
+                            <div class="boxCool"></div>
+                            <div class="boxRed"></div>
+                            <div class="boxWarm"></div>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+        </p>
+        <h3>Tertiary Colours</h3>
+        <p>In the RGB model, the primary colours are red, green and blue. Mixing two primary colours results in
+            secondary colours. And mixing a primary colour with a secondary colour results in a tertiary colour. As
+            shown below, mixing blue and green creates cyan, blue and red creates magenta, and red and green creates
+            yellow. Seconary colours are also complementary or contrasting colours to the colour they do not contain -
+            for example cyan complements red as blue and green create cyan, and not red.</p>
+
+        <p>Although contrast is great for impact, too many contrasting colours can be overwhelming. Putting text on a
+            contrasting colour can make it annoying to read as well. Thus it is best to use just one contrasting colour
+            and delegate it towards creating visual impact for an element you wish to highlight.</p>
+
+        <div class="boxColour">
+            <section class="container">
+                <div class="row">
+                    <figure class="col-sm-5">
+                        <p>Primary</p>
+                        <div class="boxRed"></div>
+                        <div class="boxBlue"></div>
+                        <div class="boxGreen"></div>
+                    </figure>
+                    <figure class="col-sm-1">
+                    </figure>
+                    <figure class="col-sm-5">
+                        <p>Secondary</p>
+                        <div class="boxMagenta"></div>
+                        <div class="boxCyan"></div>
+                        <div class="boxYellow"></div>
+                    </figure>
+                </div>
+
+
+            </section>
+            <p>Tertiary</p>
+            <div class="boxOrange"></div>
+            <div class="boxRose"></div>
+            <div class="boxViolet"></div>
+            <div class="boxAzure"></div>
+            <div class="boxSpringGreen"></div>
+            <div class="boxChartreuse"></div>
+        </div>
+
+        <p>This exercise goes further into looking at Hue, Saturation, Tone and Lightness and manipulating these values
+            with'hsl()' which takes a numerical value for the colour, the % saturation and the %lightness. I won't go
+            over
+            that here as I am comfortable in this topic. However, for more on colour theory,
+            Canva has a great resource which you can find <a href="https://www.canva.com/colors/color-wheel/">here</a>.
+        </p>
+        <h3>Gradients</h3>
+        <p>Using the 'background' properties 'linear-gradient()' function, we can create gradients in any direction,
+            with any and as many colours as we would like. This function takes a direction value using degrees from 0 to
+            360.</p>
+        <div class="roundGradient">
+        </div>
+        <br>
+        <p>Below I used a new function called 'repeating-linear-gradient()', which will allow us to make a repeating
+            pattern out of our gradient. To do this, we need to indicate where our colours will transition from one to
+            the other. This stopping point can be marked either with a % or px.</p>
+        <br>
+        <div class="roundRepeat">
+        </div>
+        <br>
+
+        <h4>Transform</h4>
+        <p>'Transform' can be used with a variety of functions to manipulate elements:
+            <ul>
+                <li>'scale()' - Increase or decrease the size of things. Basically scaling up or down. I've used this to
+                    increase the size of my first gradient when hovering.</li>
+                <li>'skew()' - Can be 'skewX()' and/or 'skewY()'. This skews the image along the X and/or Y axis. This
+                    can be observed on my second gradient.</li>
+                <li>'rotate' - Self-explanatory.</li>
+            </ul>
+        </p>
+        <h3>Graphics and Animation</h3>
+        <p>At this point, I have made quite a few of my own graphics, particularly in the Colour Theory section. Below
+            I've created an overlapping graphic using the skills I have learned so far to make my moon. I have made the
+            overlapping element slightly lighter than the background so you can see how I made the crescent moon shape.
+        </p>
+
+        <div class="boxSolid">
+            <div class="moonRound">
+            </div>
+        </div>
+
+        <p>When creating more complex shapes, the following properties and pseudo-elements may become useful:
+            <ul>
+                <li>'content' - Property; necessary when using the '::before' and '::after' pseudo-classes where
+                    'content' is set to an empty string. 'content' is also used to add photos, text and other items to a
+                    selected element. </li>
+                <li>'::before' and '::after' - Pseudo-class; these are used to add something before or after a selected
+                    element.</li>
+            </ul>
+            In the exercise, this was used to create a graphic of a heart. Because I am currently not feeling very
+            creative, I am just going to include the heart I made in the exercise here. I have also added some animation
+            to it, which is covered in the section below.
+        </p>
+        <div class="container">
+            <div class="heart">
+            </div>
+        </div>
+        <h4>@keyframes and Animation</h4>
+        <p>For this segment, we are introduced to a number of properties and @keyframes. @keyframes is a rule which
+            controls what happens in each frame of the animation, whereas the properties control how the animation
+            should behave.
+            These properties include: <ul>
+                <li>'animation-name' - sets the animation's name</li>
+                <li>'animation-duration' - sets the length of the animation</li>
+                <li>'animation-timing-function' - specifies how the animation accelerates and decelerates over the
+                    course of the duration. Values include 'ease', which is the default, 'linear', 'ease-in' and
+                    'ease-out'. </li>
+            </ul>
+        </p>
+        <div class="wholeCard">
+            <div class="cardText">
+                <p>"@keyframes is how to specify exactly what happens within the animation over the duration. This is
+                    done by giving CSS properties for specific "frames" during the animation, with percentages ranging
+                    from 0% to 100%. If you compare this to a movie, the CSS properties for 0% is how the element
+                    displays in the opening scene. The CSS properties for 100% is how the element appears at the end,
+                    right before the credits roll. Then CSS applies the magic to transition the element over the given
+                    duration to act out the scene."</p>
+                <h5>- Free Code Camp, 2020</h5>
+            </div>
+        </div>
+        <p>Below I have created a bar which fades from a minty colour into the webpage by using the opacity property in
+            @keyframes.</p>
+        <div class="boxFade" id="boxMint">
+        </div>
+        <p>And below I used @keyframes to change a button's hover state. The second button includes a new piece of info,
+            'animation-fill-mode'. This property specifies what styling to use when the animation has finished. Setting
+            it to 'forwards' as a value, allows it to stay orange. In my
+            first one, it defaulted to the in-built Bootstrap hover state.</p>
+        <div class="buttonAnimated">
+            <button>Animated Hover State</button>
+
+            <button id="buttonNew">New Animated Hover State</button>
+        </div>
+
+        <p>Additionally, CSS offset properties can be used to move items around if the element has its position set to
+            either 'relative', 'fixed' or 'absolute'. Check out my bouncy ball!</p>
+        <div style="height: 200px">
+            <div class="bouncyBall">
+            </div>
+        </div>
+
+        <p>To keep this ball bouncing, and to keep my heart from earlier still beating, I used the
+            'animation-iteration-count: infinite' property and value.</p>
+
+        <h4>Cubic Bezier</h4>
+        <p>Oh boy. This confused me a lot - it all came out as a massive info-dump which for a beginner is a lot to take
+            in. </p>
+        <!--
+        <p>Bezier curves are used with the cubic-bezier function. The shape of the curve represents how the animation
+            plays out. The curve lives on a 1 by 1 coordinate system. The X-axis of this coordinate system is the
+            duration of the animation (think of it as a time scale), and the Y-axis is the change in the animation.
+
+            The cubic-bezier function consists of four main points that sit on this 1 by 1 grid: p0, p1, p2, and p3. p0
+            and p3 are set for you - they are the beginning and end points which are always located respectively at the
+            origin (0, 0) and (1, 1). You set the x and y values for the other two points, and where you place them in
+            the grid dictates the shape of the curve for the animation to follow. This is done in CSS by declaring the x
+            and y values of the p1 and p2 "anchor" points in the form: (x1, y1, x2, y2). Pulling it all together, here's
+            an example of a Bezier curve in CSS code:
+
+            animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+
+            In the example above, the x and y values are equivalent for each point (x1 = 0.25 = y1 and x2 = 0.75 = y2),
+            which if you remember from geometry class, results in a line that extends from the origin to point (1, 1).
+            This animation is a linear change of an element during the length of an animation, and is the same as using
+            the linear keyword. In other words, it changes at a constant speed.
+            
+            
+
+            A previous challenge discussed the ease-out keyword that describes an animation change that speeds up first
+            and then slows down at the end of the animation. On the right, the difference between the ease-out keyword
+            (for the blue element) and linear keyword (for the red element) is demonstrated. Similar animation
+            progressions to the ease-out keyword can be achieved by using a custom cubic Bezier curve function.
+
+            In general, changing the p1 and p2 anchor points drives the creation of different Bezier curves, which
+            controls how the animation progresses through time. Here's an example of a Bezier curve using values to
+            mimic the ease-out style:
+
+            animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+
+            Remember that all cubic-bezier functions start with p0 at (0, 0) and end with p3 at (1, 1). In this example,
+            the curve moves faster through the Y-axis (starts at 0, goes to p1 y value of 0, then goes to p2 y value of
+            1) than it moves through the X-axis (0 to start, then 0 for p1, up to 0.58 for p2). As a result, the change
+            in the animated element progresses faster than the time of the animation for that segment. Towards the end
+            of the curve, the relationship between the change in x and y values reverses - the y value moves from 1 to 1
+            (no change), and the x values move from 0.58 to 1, making the animation changes progress slower compared to
+            the animation duration.
+        
+            A previous challenge discussed the ease-out keyword that describes an animation change that speeds up first
+            and then slows down at the end of the animation. On the right, the difference between the ease-out keyword
+            (for the blue element) and linear keyword (for the red element) is demonstrated. Similar animation
+            progressions to the ease-out keyword can be achieved by using a custom cubic Bezier curve function.
+
+            In general, changing the p1 and p2 anchor points drives the creation of different Bezier curves, which
+            controls how the animation progresses through time. Here's an example of a Bezier curve using values to
+            mimic the ease-out style:
+
+            animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+
+            Remember that all cubic-bezier functions start with p0 at (0, 0) and end with p3 at (1, 1). In this example,
+            the curve moves faster through the Y-axis (starts at 0, goes to p1 y value of 0, then goes to p2 y value of
+            1) than it moves through the X-axis (0 to start, then 0 for p1, up to 0.58 for p2). As a result, the change
+            in the animated element progresses faster than the time of the animation for that segment. Towards the end
+            of the curve, the relationship between the change in x and y values reverses - the y value moves from 1 to 1
+            (no change), and the x values move from 0.58 to 1, making the animation changes progress slower compared to
+            the animation duration.
+        
+            This challenge animates an element to replicate the movement of a ball being juggled. Prior challenges covered
+        the linear and ease-out cubic Bezier curves, however neither depicts the juggling movement accurately. You need
+        to customize a Bezier curve for this.
+
+        The animation-timing-function automatically loops at every keyframe when the animation-iteration-count is set to
+        infinite. Since there is a keyframe rule set in the middle of the animation duration (at 50%), it results in two
+        identical animation progressions at the upward and downward movement of the ball.
+
+        The following cubic Bezier curve simulates a juggling movement:
+
+        cubic-bezier(0.3, 0.4, 0.5, 1.6);
+
+        Notice that the value of y2 is larger than 1. Although the cubic Bezier curve is mapped on a 1 by 1 coordinate
+        system, and it can only accept x values from 0 to 1, the y value can be set to numbers larger than one. This
+        results in a bouncing movement that is ideal for simulating the juggling ball.
+    </p>-->
+
+        <h2 id="Accessibility-section">Applied Accessibility</h2>
+        <p>Ensuring that your site is able to be experienced by those with low vision or who use screen-readers is
+            important. Basically, assistive technologies can analyse a webpage for specific tags as the reader may set
+            the reader to scan for specific areas to jump to and read areas which are then relevant for them. For
+            example, the reader may be set to only read main headings like 'h1', thus if you don't use that in your
+            code, your headings won't be read. This is referred to as 'semantic meaning' - making your code semantically
+            meaningful is really useful for making your page accessible. One of the examples was that a description of
+            an image used as a page break
+            should not be included in 'alt'. And although HTML5 treats these tags no different to a div, they provide a
+            lot of semantic information to assistive technologies that can optimise their user's experience of your
+            site. Here are a few more tags that are helpful
+            for those who use screen readers:
+            <ul>
+                <li>'main' - This wraps around the main content of your page and does not include elements that repeat
+                    across the site like headers, navs and footers. This tag gives assistive tech the ability to 'jump
+                    to main' for example.</li>
+                <li>'article' - Groups independent, self-contained content. Wraps around independent sections of content
+                    such as blog entries, forum posts or news
+                    articles. To determine what fits together, ask yourself if you removed all surrounding context,
+                    would that content still make sense?</li>
+                <li>'section' - Groups related content. Wraps around thematically related content rather than
+                    independent content, like a
+                    chapter to a book.</li>
+                <li>'div' - Groups content. Use this for content where there is no relationship between it and other
+                    groups. There is no
+                    point in sectioning it into a section or article basically.</li>
+                <li>'nav' - Wraps around the main navigation links of the page. If there are recurring links acrossing
+                    pages, just stick them in a header or footer. Nav is more for page navigation, not site-wide
+                    navigation.</li>
+                <li>'figure' - Wraps around a figure (i.e image, chart, diagram etc). This is paired with 'figcaption'
+                    internally.</li>
+                <li>'figcaption - Goes with 'figure' and replaces the 'p' element. It is for captioning the figure.</li>
+                <li>'label' - Wraps around the text for a specific form control item, usually the name or label for a
+                    choice. Previously we used 'label' for radio buttons where we wrapped the radio button input element
+                    inside a label element along with the label text in order to make the text clickable. Another way to
+                    achieve this is by using the for attribute as explained in this lesson. The value of the for
+                    attribute must be the same as the value of the id attribute of the form control. </li>
+                <li>'fieldset' - Wraps around a group of radio buttons which are possible answers to one question. It
+                    also uses a 'legend' tag which describes the grouping - basically replaces the 'p' tag/what is used
+                    to express the question. 'fieldset' and 'legend' aren't necessary if the choices are
+                    self-explanatory like in gender selection.</li>
+                <li>'input' - Used to provide form controls for a variety of input types. You can specify these types
+                    using the 'type' attribute - types may include 'submit', 'date' and 'text' - all fairly
+                    self-explanatory. 'text' is the default type. Don't forget to 'name' your input!</li>
+                <li>'time' and 'datetime' attribute - This element + attribute pairing can wrap around text that allows
+                    us to express and produce the more specific and non-colloquial version of it to avoid confusion
+                    inline for screenreader users.</li>
+                <li>'accesskey' - Lets you assign a keyboard shortcut key to an element which when hit will allow you to
+                    activate or focus on the element. This is case sensitive.</li>
+                <li>'tabindex' - Lets someone tab to an element. The value (positive, negative and 0) determines the
+                    behaviour. You can use the CSS pseudo-class ':focus' with it. You can use 'tabindex' to cycle
+                    through the order of tabbing using the value, the lowest number from 1 being first. 'tabindex'
+                    will be explored further later on. </li>
+            </ul>
+        </p>
+
+        <p>Aside from tagging your page, there are other considerations to be made. Such as how are you going to have
+            screenreaders read a chart or diagram? Well you are better off using a table for them, but what if you
+            really want that graph and not both? Well you can hide the table from non-screenreader using users by
+            playing with CSS by setting 'position:absolute', width/height to 1px and left to -10000px.</p>
+        <div class="wholeCard">
+            <p>
+                The following do not work, despite what people online may say:
+                <ul>
+                    <li>display: none; or visibility: hidden; hides content for everyone, including screen reader users
+                    </li>
+                    <li> Zero values for pixel sizes, such as width: 0px; height: 0px; removes that element from the
+                        flow of your document, meaning screen readers will ignore it
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <p>Other good ideas from the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content
+                Accessibility Guidelines</a> include:
+            <ul>
+                <li>High contrast text - Recommended to be at least a 4.5 to 1 contrast ratio for normal text. This
+                    ratio is calculated by comparing the luminance values of two colours which can range from 1:1 = same
+                    colour/no contrast, to 21:1 which = white vs black/the most contrast. You can use online tools to
+                    check for contrast ratios.</li>
+                <li>Avoid colourblindness - You can counteract the muddy/blurring greyscale from colourblindness by
+                    ensuring you have strong enough contrast. A 4.5:1 is advised - this can be done by shading the
+                    darker colour and tinting the lighter colour.</li>
+                <li>Choose the right colours - Maybe don't choose colours too close to each other on the colour wheel in
+                    the same space or as a foreground vs background colour. Use a colour calculator or colour simulator
+                    if you are having trouble.</li>
+                <li></li>
+            </ul>
+        </p>
+
+        <h2 id="ResponsivePrinciples-section">Responsive Web Design Principles</h2>
+        <p><em>"Responsive Web Design is an approach to designing web content that responds to the constraints of
+                different
+                devices. The page structure and CSS rules should be flexible to accommodate these differences. In
+                general,
+                design the page's CSS to your target audience. If you expect most of your traffic to be from mobile
+                users,
+                take a 'mobile-first' approach. Then add conditional rules for larger screen sizes."</em> - Free Code
+            Camp, 2020.
+            I could not have said it better myself.</p>
+        <h3>Media Queries</h3>
+        <p>Media queries basically adjusts content to fit into the viewport. The viewport is essentially the dimensions
+            of visible page space the user can see, which is dependent upon the device they are using. Media queries use
+            a media-type, which if it matches with the device the page is displayed on, the relevant styles will be
+            applied. A media query takes max or min height or width. They may look like this:
+
+            <div class="wholeCard">
+                <p>
+                    @media (max-height: 400px) { <br>
+                    h4 {<br>
+                    font-size: 12px;<br>
+                    }<br>
+                    }<br></p>
+            </div>
+            This media query basically says, that for viewports with a maximum height of 400px, make the h4 header have
+            a font-size of 12px.
+        </p>
+
+        <h3>Responsive Images</h3>
+        <p>Making responsive images is much easier. Just add max-width: 100% and height: auto to your img CSS. Check out
+            the example below:
+            <img src=>
+            <img style="max-width: 100% height:auto" src=>
+        </p>
+        <h3>Retina Image for Higher Resolution Displays</h3>
+        <p>Pixel density, which can impact how high resolution your page is displayed, can vary between devices. Pixel
+            density is evaluated as Pixel Per Inch (PPI) or Dots Per Inch (DPI)
+            Retina Displau, used in Macs, are a form of high resolution display. They have different pixel density to
+            Non-Retina displays which often have lower resolution. Images not made with high-DPI/high-resolution in mind
+            will end up looking pixelated. But we can fix that by defining an image's width and height values as half
+            (or smaller) than in the original file. For example, if your image you ripped off Google Images has a width
+            of 400 and height of 600, reduce the width to 200 and height to 300 or 50%.
+            <h3>Typography Responsive</h3>
+            <p>We have been using px and em to size our text and elements for that matter, but we can also use 'viewport
+                units' which function similarly to percentages in that they are relative units, but of course are
+                different. <em>"Viewport units are relative to the viewport dimensions (width or height) of a device,
+                    whereas
+                    percentages are relative to the size of the parent container element."</em> - Free Code Camp, 2020
+
+                The four viewport dimensions include:
+                <ul>
+                    <li> vw (viewport width): 15vw would be 15% of the viewport's width. </li>
+                    <li>vh (viewport height): 40vh would be 40% of the viewport's height.</li>
+                    <li>vmin (viewport minimum): 9vmin would be 9% of the viewport's smaller dimension (height or
+                        width).</li>
+                    <li>vmax (viewport maximum): 100vmax would be 100% of the viewport's bigger dimension (height or
+                        width).</li>
+                </ul>
+            </p>
+            <h2 id="Flexbox-section">CSS Flexbox</h2>
+            <p>CSS3 introduced Flexible Boxes, or flexbox, to create page layouts for a dynamic UI. It is a layout mode
+                that arranges elements in a predictable way for different screen sizes and browsers. While somewhat new,
+                all popular modern browsers support flexbox. This section covers how to use flexbox and the different
+                layout options it offers.</p>
+
+            <img src="https://www.w3.org/TR/css-flexbox-1/images/flex-direction-terms.svg"
+                alt="image showing flexbox axis and container start and end points">
+
+            <p> Here are a few new flexbox options:
+                <ul>
+                    <li>'flexdirection' - Takes 'row', 'column', 'row-reverse' and 'column-reverse' as values.</li>
+                    <li>'justify-content' - Aligns items along the main axis.(REWORD THIS LESSON HERE)</li>
+                    <li>'align-items' - Aligns items on the cross axis.(REWORD LESSON HERE)</li>
+                    <li>'flex-wrap' - Fit items into the same row and move extra items to a new row. This takes 'nowrap'
+                        (default), 'wrap' and 'reverse wrap'.</li>
+                    <li>'flex-shrink' - Causes an item to shrink in the container if the container is too small to fit
+                        them all. The numerical value it takes denotes by how many times the item can shrink.</li>
+                    <li>'flex-grow' - The inverse of 'flex-shrink'</li>
+                    <li>'flex-basis' - Specifies initial size of the item before flex-shrink/grow adjustments. It takes
+                        all size properties, auto lets it size the item based on its content size.</li>
+                    <li>'flex' - Property. Uses clockwise notation to take values for 'flex-shrink', 'flex-grow' and
+                        lastly, 'flex-basis'.</li>
+                    <li>'order' - Property. Denotes the order from left-right/top-down the flex items appear.</li>
+                    <li>'align-self' - Property. Allows you to adjust each item's alignment individually, instead of
+                        setting them all at once. Takes the same values as 'align-items' and will also override it. This
+                        is a good work around for other common adjustment techniques using the CSS properties float,
+                        clear, and vertical-align which do not work on flex items.</li>
+                </ul>
+
+            </p>
+            <h2 id="CSSGrid-section">CSS Grid</h2>
+            <p>
+                The CSS grid allows you to design web pages easily and more simply. Basically, it turns an HTML element
+                into a grid with rows and columns which you can then use to place child elements into exactly where you
+                want them to be in this grid. The grid is made up of lines with the top line valued as line '1' and and
+                the edge of its row or column begins line '2'. This image may help explain the grid better:
+                <br>
+
+                <img src="https://www.w3schools.com/css/grid_lines.png">
+                <br>
+                <br>
+                Here are some useful grid tools:
+                <ul>
+                    <li>'display:grid' - Establishes your grid within the element you put this in. You can also create a
+                        grid within a grid by using this on an item of your main grid.</li>
+                    <li>'grid-template-columns'/'grid-template-rows' - Adds columns/rows to your grid.</li>
+                    <li>'fr' - This value sets the column or row to be a fraction of the available space</li>
+                    <li>'auto' - This value sets the column or row to the width/height of its content automatically</li>
+                    <li>'%' - Adjusts the column or row to the percent width of its container</li>
+                    <li>'grid-column-gap' - Places a gap between the columns. According to VS code, this is now
+                        obsolete, however it still works for me on Firefox as of <time
+                            datetime="2020/05/03">3/5/2020</time>.</li>
+                    <li>'grid-row-gap' - Places a gap between rows</li>
+                    <li>'grid-gap' - Short-form for previous 2. Takes up to 2 values where the first value is taken for
+                        rows, and the second is for columns.</li>
+                    <li>'grid-column'/'grid-row' - Allows us to specify how many columns/rows an item will consume in
+                        the grid. If
+                        written as 'grid-columm: 1/2', the item will fill the first column as it starts at line one and
+                        ends at line two. </li>
+                    <li>'justify-self' - Align the content's position within its cell (box) horizontally. By default
+                        this is set to 'stretch' which makes the item fill the cell. Other values include 'start'
+                        (aligns left), 'center' and 'end' (aligns right). You can use this in your parent container to
+                        set the alignment for all items, or individually. </li>
+                    <li>'align-self'- Aligns the item within its cell vertically. Takes the same values as
+                        'justify-self'.</li>
+                </ul>
+
+                <br>
+                <div class="practiceGrid">
+                    <div class="d1">1</div>
+                    <div class="d2">2</div>
+                    <div class="d3">3</div>
+                    <div class="d4">4</div>
+                    <div class="d5">5</div>
+                    <div class="d6">6</div>
+                </div>
+                <br>
+                In the example above, box 1 is set to auto, 2 is set to 2fr, 3 is set to 30px, 4 is set to 60% and 5 is
+                set to 1fr. We have also added a 5px gap between each column and row using 'grid-gap'.
+                'grid-template-columns' is used to create
+                the columns' width and 'grid-template-rows' to create the rows' height.
+            </p>
+            <h4>Grid Area</h4>
+            <p>
+                <ul>
+                    <li>'grid-template-areas' - Allows you to group cells of your grid together into an area and give
+                        the area a custom name. Every word in the code represents a cell and every pair of quotation
+                        marks represent a row. In addition to custom labels, you can use a period (.) to designate an
+                        empty cell in the grid.</li>
+                    <!--create example-->
+                    <li>'grid-area' - Once you've made your area template, use this to assign the name to your item. Or
+                        you can use this with line designation which will look like: 'grid-area: 1/2/3/4' - this
+                        translates to 'The item will now sit in the space starting at horizontal line 1 to horizontal
+                        line 3, and starting at vertical line 2 and ending at vertical line 4'.</li>
+
+                </ul>
+            </p>
+            <h4>Repeat</h4>
+            <p>
+                Additionally, to create this many columns and rows without having to provide size values for all of them
+                using the 'grid-template-columns' and 'grid-template-rows', you can use
+                'grid-template-columns'/'grid-template-rows' with the attribute 'repeat' followed by in parentheses your
+                preferred number of columns/rows followed by another value still in these parentheses to indicate the
+                size. This will look like: 'grid-template-columns: repeat(20, 30px);'. This means the grid will have 20
+                columns all at 30px in width. You can also put multiple values as shown below:
+                <!--EXAMPLE WITH 5 EVEN ROWS, AND 4 EVEN vs 1 EXTRA DIFFERENT ROW-->
+
+                You can also use 'grid-template-columns'/'grid-template-rows' with 'minmax' which will limit the size of
+                items when the grid container changes size. It would look something like this 'grid-template-columns:
+                repeat(3, minmax(90px, 1fr))'.
+
+                Further interesting things include:
+                <ul>
+                    <li>'auto-fill' - This allows you to automatically insert as many rows or columns of your desired
+                        size as possible depending on the
+                        size of the container. You can create flexible layouts when combining auto-fill with minmax.
+                    </li>
+                    <li>'auto-fit' - Similar to 'auto-fill' except that 'auto-fill' will keep adding rows/columns to
+                        fill the container even if items don't fill it up. 'auto-fit' makes them stretch to fit the
+                        remainder of the container.</li>
+
+                </ul>
+
+                <div class="wholeCard">
+                    <div class="cardText">
+                        <p> "The CSS Grid can also be an easy way to make your site more responsive by using media
+                            queries to rearrange grid
+                            areas, change dimensions of a grid, and rearrange the placement of items."</p><h5>- Free Code Camp,
+                            2020</h5>
+                    </div>
+                </div>
+                This is hard to explain by coding this myself as you won't be able to see it, so I took snippets from
+                Free Code Camp to help explain:
+
+                <!--Insert when you are bothered-->
+
+            </p>
+
+
+
+            <h2 id="Projects-section">Responsive Web Design Projects</h2>
+            <p>Here are links to the projects I did following this guide:
+                <ul>
+                    <a href="https://codepen.io/knuys/pen/vYNpJpO">Tribute Page</a><br>
+                    <a href="">Survey Form</a><br>
+                    <a href="">Product Landing Page</a><br>
+                    <a href="">Technical Documentation Guide</a><br>
+                    <a href="">Personal Portfolio Webpage</a><br>
+                </ul>
+            </p>
+
+
+
+
+
     </div>
 
 

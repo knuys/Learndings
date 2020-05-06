@@ -1,0 +1,619 @@
+body {
+    background-color: whitesmoke;
+}
+
+.everything {
+    background-color: whitesmoke;
+    font-size: large;
+    margin: 0em 8em 0em 8em;
+    font-family: Arial, sans-serif;
+    line-height: 1.6em;
+    text-align: justify;
+}
+  
+  h1 {
+    color: rgb(8, 110, 110);
+    text-align: center;
+    margin-bottom: 5rem;
+    font-family: Arial, sans-serif;
+  }
+
+  h2 {
+     color: rgb(10, 134, 134); 
+     font-family: Arial, sans-serif;
+  }
+
+  h3 {
+      color: rgb(87, 122, 82);
+      margin-left: 50px;
+      font-family: Arial, sans-serif;
+  }
+
+  h4 {
+      color: darkseagreen;
+      margin-left: 5px;
+      font-family: Arial, sans-serif;
+      font-size: larger;
+  }
+
+  h5 {
+    text-align: center;
+  }
+
+  .selector {
+      color: pink;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .new {
+      color: palevioletred;
+      background-image: url("https://images.unsplash.com/photo-1498252613819-c91e65dfc7bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80");
+      background-size: cover;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2rem;
+      
+  }
+
+  #anchoring {
+      font-size: 1.5rem;
+      text-align: center;
+  }
+
+  p {
+      padding: .6rem;
+  }
+
+  .nav li {
+      display: inline;
+      padding: 0 30px;
+  }
+
+  .food {
+      display: inline;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+  }
+
+  .food img {
+      padding: 0 2em 2em;
+      max-width: 450px;
+      
+  }
+
+  .button {
+      text-align: center;
+      
+  }
+
+  .button a {
+    cursor: pointer;
+    padding: 8px 18px;
+    border: 2px solid rgb(8, 110, 110);
+    position: relative;
+  
+  }
+  
+  .button a:active {
+    top: 2px;
+  }
+
+nav {
+    width: 50em;
+}
+
+nav p {
+    text-align: end;
+    display: inline;
+}
+
+.nav-bg a {
+    padding: 2em, 3em, 2em, 3em;
+}
+
+.jumbotron {
+    display: flex;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80");
+    background-size: cover;
+    color: #ffffff;
+    height: 500px;
+    text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.col-sm-5 p {
+    text-align: center;
+}  
+
+.col-sm-5  {
+    text-align  : center;
+}  
+
+header {
+    background-color: darkseagreen;
+}
+
+header p {
+    display: inline-block;
+    font-size: 160%;
+    padding-right: 2em;
+    padding-top: 1em;
+}
+
+footer {
+    background-color: darkseagreen;
+    padding: 20px 0;
+    margin-top: 6rem;
+}
+
+footer ul {
+    list-style: none;
+    
+}
+
+footer .col-sm-2 {
+    padding-left: 30px;
+    
+}
+
+footer .col-sm-3 {
+    padding-right: 50px;
+    
+}
+
+.images img {
+    display: block;
+    margin: auto;
+}
+
+
+/* Card */
+
+.wholeCard {
+    width: 500px;
+    border: thick dotted darkseagreen;
+    border-radius: 0px;
+    margin: 10px;
+    padding: 5px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.cardContent {
+    padding: 1em;
+    text-align: center;
+    background-color: lemonchiffon;
+}
+
+.cardContent h3 {
+    margin-left: 0px !important;
+    
+}
+
+.cardText {
+    font-style: italic;
+    text-align: justify;
+}
+
+.cardText h5 {
+    position: relative;
+    left: 9em;
+    top: -10px;
+}
+.cardImage img {
+    width: 350px;
+}
+
+#infoBox {
+    box-shadow: 0px 3px 3px 3px rgba(0,0,0,0.2), 5px 5px 5px 5px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+.cardContent a:hover {
+    color: red;
+}
+
+/* meme */
+.surveyText{
+    text-align: center;
+}
+.surveyText h4{
+   padding:20px 0 -5px;
+    color: darkcyan;
+}
+
+/*AC Friends*/
+
+.favFriends {
+    display: flex;
+    margin-bottom: 20px;
+    background-image: url("./ACBG.jpg");
+    background-color: lemonchiffon;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.favFriends img {
+    display: inline;
+    object-fit: cover;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border: lightgray 15px solid;
+    border-radius: 50%;
+    background-color: white;
+    
+}
+#goldieImg {
+    object-position: 0 -40%;
+}
+#filbertImg {
+    object-position: 1.4em 3.5em;
+}
+
+#dottyImg {
+    object-position: 50% 0;
+}
+
+#positionQuote{
+    margin-top: 1em;
+}
+
+/*Colour theory*/
+.boxColour {
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.boxRed {
+    background-color: #ff0000;
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px;
+    display: inline-flex;}
+
+.boxBlue {
+    background-color: #0000ff;
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px;
+    display: inline-flex;
+}
+
+.boxMagenta{
+    background-color: magenta;
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px;
+    display: inline-flex;
+}
+
+.boxOrange {
+    background-color: orange;
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px;
+    display: inline-flex;
+}
+
+.boxPink {
+    background-color: pink;
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px;
+    display: inline-flex;
+}
+
+.boxWine {
+    background-color: darkred;
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px;
+    display: inline-flex;
+}
+
+.boxCool {
+    background-color: rgb(255, 0, 64);
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px;
+    display: inline-flex;
+}
+
+.boxWarm {
+    background-color:rgb(255, 72, 0);
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px;
+    display: inline-flex;
+}
+
+.boxGreen {
+    background-color:#00FF00;
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px;
+    display: inline-flex;
+}
+
+.boxYellow {
+    background-color:yellow;
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px;
+    display: inline-flex;
+}
+
+.boxCyan {
+    background-color:cyan;
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px;
+    display: inline-flex;
+}
+
+.boxRose {
+    background-color: #FF007F;
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px;
+    display: inline-flex;
+}
+
+.boxViolet {
+    background-color:#7F00FF;
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px;
+    display: inline-flex;
+}
+
+.boxAzure {
+    background-color:#007FFF;
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px;
+    display: inline-flex;
+}
+
+.boxSpringGreen {
+    background-color:springgreen;
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px;
+    display: inline-flex;
+}
+
+.boxChartreuse {
+    background-color:chartreuse;
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px;
+    display: inline-flex;
+}
+
+.roundGradient {
+    background: linear-gradient(75deg,yellow, orange, magenta,red,blue, springgreen);
+    border-radius: 80%;
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin:auto;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.roundGradient:hover {
+    transform: scale(1.2);
+}
+
+.roundRepeat {
+    background: repeating-linear-gradient(75deg,yellow 20px, orange 40px, magenta 60px,red 80px,blue 100px, springgreen 120px);
+    border-radius: 80%;
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin:auto;
+}
+.roundRepeat:hover {
+    transform: skewX(10deg);
+
+}
+/*Graphic*/
+
+.boxSolid {
+    background: rgb(1,1,65);
+    width: 300px;
+    height: 300px;
+    z-index:1;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 20px 20px rgb(1, 1, 65);
+    padding: 1em 0 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+.moonRound {
+    position: absolute;
+    background: rgb(1, 1, 75);
+    width: 200px;
+    height: 200px;
+    box-shadow: 50px 40px 0px 0px rgb(255, 254, 196);
+    border-radius: 50%;
+    z-index: 4;
+    margin: auto;
+    border: none;
+}
+
+.container {
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+ .heart {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -80px;
+    background-color: #f7649c;
+    height: 100px;
+    width: 100px;
+    transform: rotate(-45deg) ;
+    animation-name: beat;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  .heart::after {
+    background-color: #f7649c;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 50px;
+  }
+  .heart::before {
+    content: "";
+    background-color: #f7649c;
+    border-radius: 50%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: 0px;
+  }
+
+  @keyframes beat {
+      0% {
+          transform: scale(1.2);
+          rotate: -45deg;
+      }
+      50% {
+          transform: scale(0.5);
+          rotate: -45deg;
+      }
+  }
+
+/*Animation*/
+.boxFade {
+    height: 30px;
+    width: 100%;
+    background:#82d7b5;
+    margin: 20px auto;
+    animation-name: mint;
+    animation-duration: 5s;
+}
+
+@keyframes mint {
+    0% {
+     background-color: #82d7b5;   
+    }
+    50% {
+        opacity: 0.1;
+    }
+}
+
+.buttonAnimated button:hover {
+    animation-name: fruitcolor;
+    animation-duration: 500ms;
+}
+
+@keyframes fruitcolor {
+    100% {
+        background-color: orange;
+    }
+}
+
+#buttonNew:hover {
+    animation-name: fruitcolor;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.bouncyBall {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #82d7b5;
+    border-radius: 50%;
+    animation-name: bouncyball;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bouncyball {
+    0% {
+        background-color: #82d7b5;
+        top: 0px;
+    }
+    50% {
+
+     top: 100px;
+     width: 140px;
+     height: 70px
+    }
+
+    75% {
+        opacity: 0.2;
+    }
+
+    100% {
+        background-color: orange;
+        top:0px;
+    }
+
+}
+
+/*CSS Grid*/
+
+  .d1{background:lightseagreen;}
+  .d2{background:lightgoldenrodyellow;}
+  .d3{background:lightskyblue;}
+  .d4{background:LightPink;}
+  .d5{background:palevioletred;}
+.d6{background:rgb(205, 205, 247)}
+
+  .practiceGrid {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 2fr 30px 60% 1fr;
+    grid-template-rows: 50px 50px;
+    grid-gap: 5px 5px;
+
+/*Boxes
+
+.boxPosition {
+    
+}
+.zindexBox {
+    background-color: lemonchiffon;
+    border: thick dotted darkseagreen;
+    width: 300px;
+    display: block;
+    z-index:2;
+    left: 40%;
+}
+
+.zindexExample {
+    background-color: lightcyan;
+    border: thick dotted darkseagreen;
+    width: 400px;
+    display: block;
+    margin-top: -10em;
+    z-index: 1;
+    left: 60%;
+}*/
+
