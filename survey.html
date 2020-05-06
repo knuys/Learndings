@@ -1,0 +1,66 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FCC Survey</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+
+<body>
+    <main>
+        
+        <h1 id="title">Web Design Feedback Survey</h1>
+        <p id="description">Thank you for helping to improve the look and feel of this website</p>
+        <form id="survey-form" action="/submit-details">
+            <label id="name-label">Name</label> <input id="name" style="width:560px" type="text"
+                placeholder="Enter your name" required />
+            <label id="email-label">Email</label><input id="email" style="width:560px" type="email"
+                placeholder="Enter your email" required />
+            <label id="number-label">Age (optional)</label><input id="number" style="width:560px" type="number" min="1"
+                max="140" placeholder="Enter your age" />
+            <p id="proficient-label">How proficient in web development are you?</p>
+            <select id="dropdown" class="proficiency-list" name="proficiency" required>
+                <option disabled="" value="" selected="">Select your level of proficiency</option>
+                <option value="beginner">Beginner</option>
+                <option value="moderate">Moderately proficient</option>
+                <option value="proficient">Proficient</option>
+            </select>
+
+            <p>How satisfied are you with the appearance of this webpage?</p>
+            <label for="satisfied">
+                <input id="satisfied" type="radio" name="satisfaction" checked value="1"> Satisfied</input>
+            </label>
+            <label for="neither">
+                <input id="neither" type="radio" name="satisfaction" value="2"> Neutral</input>
+            </label>
+            <label for="unsatisfied">
+                <input id="unsatisfied" type="radio" name="satisfaction" value="3"> Unsatisfied</input>
+            </label>
+
+            <p>What do you like about the design of this webpage?</p>
+            <label for="colour">
+                <input id="colour" type="checkbox" name="design" value="colour" checked> Colours</input>
+            </label>
+            <label for="layout">
+                <input id="layout" type="checkbox" name="design" value="layout"> Layout</input>
+            </label>
+            <label for="font">
+                <input id="font" type="checkbox" name="design" value="font"> Font</input>
+            </label>
+
+            <p>Additional Feedback</p>
+            <textarea id="feedback" rows="10" cols="75" placeholder="What are your thoughts about this page design?"
+                required></textarea>
+
+
+
+            <button id="submit" type="submit">Enter</button>
+
+
+        </form>
+
+
+    </main>
+]</body>

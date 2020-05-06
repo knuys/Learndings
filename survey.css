@@ -1,0 +1,85 @@
+body {
+    color: hsl(182, 45%, 50%);
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.8);
+    background-image: url("https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=2004&q=80");
+    background-blend-mode: overlay;
+    
+}
+
+
+#description {
+color: white;
+}
+#survey-form {
+    background-color: white;
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 20px 80px 20px 80px;
+    text-align: justify;
+    line-height: 1.5em;
+    opacity: 95%;
+ 
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    margin: 1em 0em 1em;
+}
+
+#dropdown {
+    width: 560px;
+
+}
+
+input{
+padding: 10px;
+}
+
+select {
+    padding: 10px;
+}
+
+
+/*
+ .ddbtn {
+    background-color: lightgray;
+    padding: 16px;
+    border: cadetblue;
+  }
+  .ddmenu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dd-content {
+    display: none;
+    position: absolute;
+    background-color: snow;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown 
+  .dd-content a {
+    color: cadetblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+
+  .dd-content a:hover {background-color: lightgray;}
+
+  .ddmenu:hover .dd-content {display: block;}
+
+  .ddmenu:hover .ddbtn {background-color: snow;
+  
+
