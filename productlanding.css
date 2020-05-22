@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0px;
+}
+
+main {
+    padding: 10em 15em 0 15em;
+    text-align: center;
+}
+
+#header {
+    position: fixed;
+    height: 5em;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+#header-img {
+height: 5em;
+width: 12em;
+object-fit: cover;
+object-position:100% 35%;
+margin-left: 1em;
+float: left;
+}
+
+
+#nav-bar {
+    margin-top: 2.5em;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 0 5em 0 5em;
+    display: inline;
+  
+}
+
+.nav-link:hover {
+    font-style: italic;
+}
+
+#video {
+    display: block;
+    margin: auto;
+}
+
+#form {
+    padding: 0 0 3em;
+
+}
+
+#email-label {
+font-weight: bold;
+}
+
+#email {
+    min-width: 50%;
+
+}
+
+#submit {
+    
+
+}
+
+@media (max-height: 500px) { 
+    img {
+    max-width: 50%;}
+    #video {
+        max-width: 60%;
+        height: 60%}
+    }
+}
+
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 2em;
+}
+
+h3 {
+    font-size: larger   ;
+}
+
+p {
+    padding: 0 0 1em;
+}
+
+.featuredCard {
+    border: black solid .3em;
+    background-color: white;
+    color: black;
+    width: 33%;
+    margin: 0 1em;
+}
+.featuredFlex {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+
+}
+
+.featuredFlex p{
+    padding: 0 1em 0 1em;
+}
+
+.featuredFlex img{
+    max-width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.shopBox {
+    border: black solid .3em;
+    border-radius: 10%;
+    background-color: black;
+    width: 4em;
+    height: 2em;
+    color: white;
+    display: block;
+    margin: auto;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+.shopBox p {
+    margin: .4em 0 1em 0;
+}
+
+.shopBox p:hover {
+    font-style: italic;
+   
+}
+
+#logocaption {
+    text-align: center;
+    color: black;
+    margin: -30px 0;
+    font-style: italic;
+    padding: 1em 0;
+}
+
+footer {
+    height: 5.2em;
+    background-color: oldlace;
+}
+footer ul {
+    list-style: none;
+    
+}
+
+footer .col-sm-2 {
+    padding: 1em 0 0 1em; 
+}
